@@ -1,0 +1,146 @@
+\documentclass[a4paper,12pt,bibliography=totoc]{scrreprt}% ohne Option toc=flat
+\usepackage{tocstyle}
+\usetocstyle{allwithdot}
+\usepackage{lmodern}
+\usepackage{natbib}
+\usepackage[hyphens]{url}
+\usepackage[utf8]{inputenc}% Kodierung
+\usepackage[ngerman]{babel}% Sprache
+\usepackage{filecontents}
+\begin{filecontents}{books.bib}
+
+
+
+\end{filecontents}
+
+%############## BEISPIELE
+%INTERNETSEITE###############
+% @inproceedings{inhaus,
+%    author={Klaus Scherer},
+%    title={Das Potenzial intelligenter Haustechnik
+% für ehome-care},
+%    publisher={Präsentation auf der ZTG-Tagung am 09.05.2006, Krefeld},
+%    year={2006}
+%}
+%
+%INTERNETSEITE###############
+%@book{rfid,
+%  title={RFID-Handbuch: Grundlagen und praktische Anwendungen von Transpondern,  % kontaktlosen Chipkarten und NFC},
+%  author={Finkenzeller, K.},
+%  isbn={9783446412002},
+%  year={2008},
+%  publisher={Hanser, Carl}
+%}
+%
+%INTERNETSEITE###############
+%@incollection{lev1,
+%  author={Lev Manovich},
+%  title={Die Poetik des erweiterten Raumes},
+%  pages={337-349},
+%  booktitle={Topos Raum: Die Aktualit{\"a}t Des Raumes in Den K{\"u}nsten Der %Gegenwart},
+%  editor={Lammert, A. and {Akademie der K{\"u}nste Berlin}},
+%  isbn={9783938821077},
+%  lccn={2006483669},
+%  year={2005},
+%  publisher={Verlag f{\"u}r Moderne Kunst},
+%  address={Nürnberg}
+%}
+%
+%INTERNETSEITE###############
+%@misc{linden,
+%year = 2012,
+%  key = {linden},
+%  title = "ABOUT LINDEN LAB",
+%  howpublished="\url{http://lindenlab.com/about}",
+%note="Abrufdatum: 10.09.2012"
+%}
+%
+%INTERNETSEITE MIT AUTHOR##############
+%@misc{stereo,
+%year = 1997,
+%  author ="{van Ackern}, N. and Lindenberg, Markus",
+%   title = "Räumliches Hören",
+%  howpublished="\url{http://irtel.uni-mannheim.de/lehre/seminararbeiten/w96/Hoeren1/Hoeren1.html}",
+%note="Abrufdatum: 27.03.2012"
+% }
+
+\usepackage[T1]{fontenc}
+%PHONE LETTER SYMBOLS
+\usepackage{pifont}
+%Das Paket wird fuer die anderthalb-zeiligen Zeilenabstand bentigt
+\usepackage{setspace}
+%Einrueckung eines neuen Absatzes
+\setlength{\parindent}{2em}
+%Definition der Raender
+\usepackage[paper=a4paper,left=30mm,right=30mm,top=30mm,bottom=30mm]{geometry}
+%Abstand der Fussnoten
+\deffootnote{1em}{1em}{\textsuperscript{\thefootnotemark\ }}
+%Regeln, bis zu welcher Tiefe (section,subsection,subsubsection) Überschriften angezeigt werden sollen (Anzeige der berschriften im Verzeichnis / Anzeige der Nummerierung)
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+%-------------------
+%Ende des Kopfbereiches
+%-------------------
+
+%-------------------
+%Hier beginnt der Text deiner Hausarbeit
+%-------------------
+\begin{document}
+%Beginn der Titelseite
+\begin{titlepage}
+\begin{center}
+\null
+\vfill
+\begin{Large}
+\textsf{\textbf{Untersuchung der Usability von Hover-Erkennung auf Smartphones.}}
+\end{Large}\linebreak \linebreak 
+\begin{large}
+\textsf{Empirische Untersuchung mittels eines Prototypen zur Ermittlung der Usability mit und ohne Hover-Erkennung.}
+\end{large}
+\begin{small}
+\vfill{Jan Wolf \\ Matrikelnummer: 2616233 \\ Mainstraße 36 \\  28199 Bremen \\\ding{38} 0151 15530761\\\ding{41} mail@jan-wolf.de \\\vspace{3cm} Universität Bremen\\ Digitale Medien B. Sc. \\ Sommersemester 2014}
+\null
+\end{small}
+\end{center}
+\end{titlepage}
+%Ende der Titelseite
+
+%Inhaltsverzeichnis (aktualisiert sich erst nach dem zweiten Setzen)
+\tableofcontents
+\thispagestyle{empty}
+%Beginn einer neuen Seite
+\clearpage
+%Anderthalbzeiliger Zeilenabstand ab hier
+\onehalfspacing
+\pagestyle{plain}
+
+%START-----------------------------------------------------------------------------------
+\chapter{Einleitung}
+Lorem Ipsum hier kommt die Einleitupsum.
+\chapter{Kapitel 2}
+Lorem Ipsum hier kommt das zweite Kapitelipsum.
+%\footnote{\citealp[S. 338]{lev1}}
+\footnote{"`Second Life"' (engl. "`Zweites Leben"') wurde 1999 von Linden Lab in San Francisco entwickelt und war eines der beeindruckendsten Beispiele virtueller Welten.}
+%(\citealp{linden})
+\chapter{Fazit}
+Lorem Ipsum hier kommt die Fazipsum.
+%ENDE-----------------------------------------------------------------------------------
+
+%Beginn einer neuen Seite
+\clearpage
+\bibliographystyle{mlu_ifg}
+\bibliography{books}
+\newpage
+\addcontentsline{toc}{chapter}{Erklärung}
+\chapter*{Erklärung}
+Ich versichere hiermit, dass ich die vorliegende Facharbeit selbständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe. Die Arbeit wurde keiner anderen Prüfungsbehörde vorgelegt und auch nicht veröffentlicht.
+\begin{center}
+\begin{tabular}{lp{2em}l} 
+ \hspace{5cm}   && \hspace{4cm} \\\cline{1-1}\cline{3-3} 
+ Bremen, \today    && Jan Wolf 
+\end{tabular} 
+\end{center}
+\end{document}
+%-------------------
+%Hier endet der Text der Bachelorarbeit.
+%-------------------

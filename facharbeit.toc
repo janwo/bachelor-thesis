@@ -1,0 +1,5 @@
+\select@language {ngerman}
+\contentsline {chapter}{\numberline {1}Einleitung}{3}
+\contentsline {chapter}{\numberline {2}Kapitel 2}{4}
+\contentsline {chapter}{\numberline {3}Fazit}{5}
+\contentsline {chapter}{Erkl\IeC {\"a}rung}{6}
