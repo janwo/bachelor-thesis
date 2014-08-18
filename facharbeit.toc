@@ -1,5 +1,22 @@
 \select@language {ngerman}
-\contentsline {chapter}{\numberline {1}Einleitung}{3}
-\contentsline {chapter}{\numberline {2}Kapitel 2}{4}
-\contentsline {chapter}{\numberline {3}Fazit}{5}
-\contentsline {chapter}{Erkl\IeC {\"a}rung}{6}
+\contentsline {chapter}{\numberline {1}Zusammenfassung}{3}
+\contentsline {chapter}{\numberline {2}Einleitung}{4}
+\contentsline {section}{\numberline {2.1}Gegenw\IeC {\"a}rtiger Stand der Technik mobiler Endger\IeC {\"a}te}{5}
+\contentsline {subsection}{\numberline {2.1.1}Hardware}{5}
+\contentsline {subsection}{\numberline {2.1.2}Software}{5}
+\contentsline {section}{\numberline {2.2}Bisherige Leitf\IeC {\"a}den f\IeC {\"u}r Bedienelemente}{6}
+\contentsline {chapter}{\numberline {3}Methodik}{8}
+\contentsline {section}{\numberline {3.1}Testpersonen}{8}
+\contentsline {section}{\numberline {3.2}Apparat}{8}
+\contentsline {section}{\numberline {3.3}Kalibrierung}{8}
+\contentsline {section}{\numberline {3.4}Prozedur}{10}
+\contentsline {section}{\numberline {3.5}Design}{10}
+\contentsline {chapter}{\numberline {4}Ergebnisse}{11}
+\contentsline {section}{\numberline {4.1}Test 1: Listenauswahl}{11}
+\contentsline {section}{\numberline {4.2}Test 2: Pr\IeC {\"a}zisionstest}{11}
+\contentsline {section}{\numberline {4.3}Vergleich zu den bisherigen Leitf\IeC {\"a}den}{11}
+\contentsline {chapter}{\numberline {5}Fazit}{12}
+\contentsline {section}{\numberline {5.1}Ausblick}{12}
+\contentsline {chapter}{\numberline {6}Danksagung}{13}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{14}
+\contentsline {chapter}{Erkl\IeC {\"a}rung}{15}

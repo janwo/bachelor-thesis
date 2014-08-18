@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.7.13)  13 JUL 2014 17:36
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.7.13)  18 AUG 2014 20:34
 entering extended mode
 **facharbeit.tex
 (C:\Users\mail_000\Dropbox\Studium\Bachelor\Latex\facharbeit.tex
@@ -190,7 +190,55 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count90
 )
-(C:\Users\mail_000\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count91
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(C:\Users\mail_000\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.sty
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip50
+\subfigcapskip=\skip51
+\subfigcaptopadj=\dimen105
+\subfigbottomskip=\skip52
+\subfigcapmargin=\dimen106
+\subfiglabelskip=\skip53
+\c@subfigure=\count92
+\c@lofdepth=\count93
+\c@subtable=\count94
+\c@lotdepth=\count95
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+
+(C:\Users\mail_000\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.cfg
+)
+\subfig@top=\skip54
+\subfig@bottom=\skip55
+) (C:\Users\mail_000\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -425,8 +473,8 @@ Language: ngermanb 2008/07/06 v2.6n new German support from the babel system
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2008/07/08 v3.8m Babel common definitions
-\babel@savecnt=\count91
-\U@D=\dimen103
+\babel@savecnt=\count96
+\U@D=\dimen107
 )
 \l@naustrian = a dialect from \language\l@ngerman 
 Package babel Info: Making " an active character on input line 92.
@@ -438,6 +486,9 @@ eX document
 )
 
 LaTeX Warning: Overwriting file `./books.bib'.
+
+
+LaTeX Warning: Tab has been converted to Blank Space.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
@@ -476,81 +527,98 @@ Package ifvtex Info: VTeX not detected.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count92
-\Gm@cntv=\count93
-\c@Gm@tempcnt=\count94
-\Gm@bindingoffset=\dimen104
-\Gm@wd@mp=\dimen105
-\Gm@odd@mp=\dimen106
-\Gm@even@mp=\dimen107
-\Gm@layoutwidth=\dimen108
-\Gm@layoutheight=\dimen109
-\Gm@layouthoffset=\dimen110
-\Gm@layoutvoffset=\dimen111
+\Gm@cnth=\count97
+\Gm@cntv=\count98
+\c@Gm@tempcnt=\count99
+\Gm@bindingoffset=\dimen108
+\Gm@wd@mp=\dimen109
+\Gm@odd@mp=\dimen110
+\Gm@even@mp=\dimen111
+\Gm@layoutwidth=\dimen112
+\Gm@layoutheight=\dimen113
+\Gm@layouthoffset=\dimen114
+\Gm@layoutvoffset=\dimen115
 \Gm@dimlist=\toks17
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
 (C:\Users\mail_000\Dropbox\Studium\Bachelor\Latex\facharbeit.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 88.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 150.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 88.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 150.
+
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Package tocstyle Info: prepare \l@part for redefinition on input line 88.
-Package tocstyle Info: prepare \l@chapter for redefinition on input line 88.
-Package tocstyle Info: prepare \l@section for redefinition on input line 88.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 88.
+Package tocstyle Info: prepare \l@part for redefinition on input line 150.
+Package tocstyle Info: prepare \l@chapter for redefinition on input line 150.
+Package tocstyle Info: prepare \l@section for redefinition on input line 150.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 150.
+
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 88.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 150.
+
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 88.
-
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 150
+.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 88.
-
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 150
+.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 88.
+(Font)              <12> on input line 150.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 88.
+(Font)              <8> on input line 150.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 88.
-Package tocstyle Info: prepare \l@subsection for redefinition on input line 88.
-
+(Font)              <6> on input line 150.
+Package tocstyle Info: prepare \l@subsection for redefinition on input line 150
+.
 Package tocstyle Info: prepare \l@subsubsection for redefinition on input line 
-88.
-Package tocstyle Info: prepare \l@table for redefinition on input line 88.
-Package tocstyle Info: prepare \l@figure for redefinition on input line 88.
+150.
+Package tocstyle Info: prepare \l@table for redefinition on input line 150.
+Package tocstyle Info: prepare \l@figure for redefinition on input line 150.
 
+(C:\Users\mail_000\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count100
+\scratchdimen=\dimen116
+\scratchbox=\box27
+\nofMPsegments=\count101
+\nofMParguments=\count102
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count103
+\MPscratchDim=\dimen117
+\MPnumerator=\count104
+\makeMPintoPDFobject=\count105
+\everyMPtoPDFconversion=\toks19
+)
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -601,6 +669,91 @@ text indent by \l@... (toc, 0):  17.62474pt
 number indent by parent (toc, 0):  0.0pt
 text indent calculated (toc, 0): 13.19998pt
 number indent calculated (toc, 0): 0.0pt
+number indent by \l@... (toc, 1):  17.62474pt
+text indent by \l@... (toc, 1):  27.02464pt
+number indent by parent (toc, 1):  13.19998pt
+text indent calculated (toc, 1): 20.88887pt
+number indent calculated (toc, 1): 13.19998pt
+number indent by \l@... (toc, 2):  44.64938pt
+text indent by \l@... (toc, 2):  37.59943pt
+number indent by parent (toc, 2):  34.08885pt
+text indent calculated (toc, 2): 30.02785pt
+number indent calculated (toc, 2): 34.08885pt
+number indent by \l@... (toc, 2):  44.64938pt
+text indent by \l@... (toc, 2):  37.59943pt
+number indent by parent (toc, 2):  34.08885pt
+text indent calculated (toc, 2): 30.02785pt
+number indent calculated (toc, 2): 34.08885pt
+number indent by \l@... (toc, 1):  17.62474pt
+text indent by \l@... (toc, 1):  27.02464pt
+number indent by parent (toc, 1):  13.19998pt
+text indent calculated (toc, 1): 20.88887pt
+number indent calculated (toc, 1): 13.19998pt
+number indent by \l@... (toc, 0):  0.0pt
+text indent by \l@... (toc, 0):  17.62474pt
+number indent by parent (toc, 0):  0.0pt
+text indent calculated (toc, 0): 13.19998pt
+number indent calculated (toc, 0): 0.0pt
+number indent by \l@... (toc, 1):  17.62474pt
+text indent by \l@... (toc, 1):  27.02464pt
+number indent by parent (toc, 1):  13.19998pt
+text indent calculated (toc, 1): 20.88887pt
+number indent calculated (toc, 1): 13.19998pt
+number indent by \l@... (toc, 1):  17.62474pt
+text indent by \l@... (toc, 1):  27.02464pt
+number indent by parent (toc, 1):  13.19998pt
+text indent calculated (toc, 1): 20.88887pt
+number indent calculated (toc, 1): 13.19998pt
+number indent by \l@... (toc, 1):  17.62474pt
+text indent by \l@... (toc, 1):  27.02464pt
+number indent by parent (toc, 1):  13.19998pt
+text indent calculated (toc, 1): 20.88887pt
+number indent calculated (toc, 1): 13.19998pt
+number indent by \l@... (toc, 1):  17.62474pt
+text indent by \l@... (toc, 1):  27.02464pt
+number indent by parent (toc, 1):  13.19998pt
+text indent calculated (toc, 1): 20.88887pt
+number indent calculated (toc, 1): 13.19998pt
+number indent by \l@... (toc, 1):  17.62474pt
+text indent by \l@... (toc, 1):  27.02464pt
+number indent by parent (toc, 1):  13.19998pt
+text indent calculated (toc, 1): 20.88887pt
+number indent calculated (toc, 1): 13.19998pt
+number indent by \l@... (toc, 0):  0.0pt
+text indent by \l@... (toc, 0):  17.62474pt
+number indent by parent (toc, 0):  0.0pt
+text indent calculated (toc, 0): 13.19998pt
+number indent calculated (toc, 0): 0.0pt
+number indent by \l@... (toc, 1):  17.62474pt
+text indent by \l@... (toc, 1):  27.02464pt
+number indent by parent (toc, 1):  13.19998pt
+text indent calculated (toc, 1): 20.88887pt
+number indent calculated (toc, 1): 13.19998pt
+number indent by \l@... (toc, 1):  17.62474pt
+text indent by \l@... (toc, 1):  27.02464pt
+number indent by parent (toc, 1):  13.19998pt
+text indent calculated (toc, 1): 20.88887pt
+number indent calculated (toc, 1): 13.19998pt
+number indent by \l@... (toc, 1):  17.62474pt
+text indent by \l@... (toc, 1):  27.02464pt
+number indent by parent (toc, 1):  13.19998pt
+text indent calculated (toc, 1): 20.88887pt
+number indent calculated (toc, 1): 13.19998pt
+number indent by \l@... (toc, 0):  0.0pt
+text indent by \l@... (toc, 0):  17.62474pt
+number indent by parent (toc, 0):  0.0pt
+text indent calculated (toc, 0): 13.19998pt
+number indent calculated (toc, 0): 0.0pt
+number indent by \l@... (toc, 1):  17.62474pt
+text indent by \l@... (toc, 1):  27.02464pt
+number indent by parent (toc, 1):  13.19998pt
+text indent calculated (toc, 1): 20.88887pt
+number indent calculated (toc, 1): 13.19998pt
+number indent by \l@... (toc, 0):  0.0pt
+text indent by \l@... (toc, 0):  17.62474pt
+number indent by parent (toc, 0):  0.0pt
+text indent calculated (toc, 0): 13.19998pt
+number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  17.62474pt
 number indent by parent (toc, 0):  0.0pt
@@ -622,43 +775,111 @@ Kapitel 1.
 
 ]
 Kapitel 2.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 123.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 123.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 123.
 [4
 
-]
+] [5] <img/nohover.jpg, id=23, 1003.75pt x 806.01125pt>
+File: img/nohover.jpg Graphic file (type jpg)
+
+<use img/nohover.jpg>
+Package pdftex.def Info: img/nohover.jpg used on input line 209.
+(pdftex.def)             Requested size: 209.1301pt x 167.92679pt.
+ <img/hover.jpg, id=24, 1003.75pt x 806.01125pt>
+File: img/hover.jpg Graphic file (type jpg)
+
+<use img/hover.jpg>
+Package pdftex.def Info: img/hover.jpg used on input line 211.
+(pdftex.def)             Requested size: 209.1301pt x 167.92679pt.
+File: img/nohover.jpg Graphic file (type jpg)
+ <use img/nohover.jpg>
+Package pdftex.def Info: img/nohover.jpg used on input line 219.
+(pdftex.def)             Requested size: 209.1301pt x 167.92679pt.
+File: img/hover.jpg Graphic file (type jpg)
+ <use img/hover.jpg>
+Package pdftex.def Info: img/hover.jpg used on input line 221.
+(pdftex.def)             Requested size: 209.1301pt x 167.92679pt.
+ [6 <C:/Users/mail_000/Dropbox/Studium/Bachelor/Latex/img/nohover.jpg> <C:/User
+s/mail_000/Dropbox/Studium/Bachelor/Latex/img/hover.jpg>] [7]
 Kapitel 3.
-[5
+[8
+
+] <img/kalibrierung_finger.png, id=35, 216.20775pt x 370.986pt>
+File: img/kalibrierung_finger.png Graphic file (type png)
+
+<use img/kalibrierung_finger.png>
+Package pdftex.def Info: img/kalibrierung_finger.png used on input line 263.
+(pdftex.def)             Requested size: 192.0548pt x 329.54814pt.
+
+<img/kalibrierung_daumen.png, id=37, 207.77625pt x 346.896pt>
+File: img/kalibrierung_daumen.png Graphic file (type png)
+
+<use img/kalibrierung_daumen.png>
+Package pdftex.def Info: img/kalibrierung_daumen.png used on input line 265.
+(pdftex.def)             Requested size: 192.0548pt x 320.66203pt.
+ [9 <C:/Users/mail_000/Dropbox/Studium/Bachelor/Latex/img/kalibrierung_finger.p
+ng> <C:/Users/mail_000/Dropbox/Studium/Bachelor/Latex/img/kalibrierung_daumen.p
+ng>] [10]
+Kapitel 4.
+[11
 
 ]
-No file facharbeit.bbl.
-[6
+Kapitel 5.
+[12
 
+]
+Kapitel 6.
+[13
+
+] (C:\Users\mail_000\Dropbox\Studium\Bachelor\Latex\facharbeit.bbl
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 10.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Underfull \hbox (badness 1325) in paragraph at lines 8--12
+[]\T1/lmr/m/sc/12 Apple Inc. \T1/lmr/m/n/12 (2014): \T1/lmr/m/it/12 iOS Hu-man 
+In-ter-face Gui-de-li-nes: Lay-out\T1/lmr/m/n/12 .  $\T1/lmtt/m/n/12 https :$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--12
+$\T1/lmtt/m/n/12 / / developer . apple . com / library / ios / documentation / 
+UserExperience /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--12
+$\T1/lmtt/m/n/12 Conceptual / MobileHIG / LayoutandAppearance . html$\T1/lmr/m/
+n/12 .  Ab-ruf-da-tum:
+ []
+
+) [14
+
+
+] [15
 
 ] (C:\Users\mail_000\Dropbox\Studium\Bachelor\Latex\facharbeit.aux) ) 
 Here is how much of TeX's memory you used:
- 3692 strings out of 493921
- 56427 string characters out of 3144867
- 160274 words of memory out of 3000000
- 6914 multiletter control sequences out of 15000+200000
- 67969 words of font info for 52 fonts, out of 3000000 for 9000
+ 4889 strings out of 493921
+ 74605 string characters out of 3144867
+ 180100 words of memory out of 3000000
+ 8072 multiletter control sequences out of 15000+200000
+ 67359 words of font info for 47 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 40i,8n,52p,274b,313s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,8n,52p,659b,318s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/public/lm/lmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr8.
-pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on facharbeit.pdf (6 pages, 151249 bytes).
+iKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/public/lm/lmcsc10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/public/lm/lmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/l
+mr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/public/lm/lmtt12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/urw/zapfding/uzdr.pfb>
+Output written on facharbeit.pdf (15 pages, 582041 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
+ 99 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

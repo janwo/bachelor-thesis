@@ -1,0 +1,53 @@
+\begin{thebibliography}{7}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\selectlanguage}[1]{\relax}
+
+\bibitem[{\textsc{{Apple Inc.}}(2014)}]{applerichtlinien}
+\textsc{{Apple Inc.}} (2014): \emph{iOS Human Interface Guidelines: Layout}.
+\newblock
+  \url{https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/LayoutandAppearance.html}.
+\newblock Abrufdatum: 09.08.2014.
+
+\bibitem[{\textsc{Dandekar} \& \textsc{Srinivasan}()}]{monkeys}
+\textsc{Dandekar, R.~B., K.} \& \textsc{Srinivasan, M.} (): \emph{3-D
+  finite-element models of human and monkey fingertips to investigate the
+  mechanics of tactile sense}.
+\newblock In: Journal of biomechanical Engineering, \textbf{125}: 682--691.
+
+\bibitem[{\textsc{D'Orazio}(2012)}]{sonyverge}
+\textsc{D'Orazio, D.} (2012): \emph{Sony Xperia Sola's 'floating touch' screen
+  technology explained}.
+\newblock
+  \url{http://www.theverge.com/2012/3/14/2871193/sony-xperia-sola-floating-touch-hover-event-screen-technology}.
+\newblock Abrufdatum: 07.08.2014.
+
+\bibitem[{\textsc{{Microsoft Corporation}}(2014)}]{winrichtlinien}
+\textsc{{Microsoft Corporation}} (2014): \emph{Windows App Development:
+  Guidelines for targeting}.
+\newblock
+  \url{http://msdn.microsoft.com/en-us/library/windows/apps/hh465326.aspx}.
+\newblock Abrufdatum: 06.08.2014.
+
+\bibitem[{\textsc{{Open Handset Alliance™}}(2014)}]{androidrichtlinien}
+\textsc{{Open Handset Alliance™}} (2014): \emph{Android Developers: Metrics
+  and Grids}.
+\newblock \url{http://developer.android.com/design/style/metrics-grids.html}.
+\newblock Abrufdatum: 09.08.2014.
+
+\bibitem[{\textsc{Travis} \& \textsc{Murano}(2014)}]{touchmouse}
+\textsc{Travis, C.} \& \textsc{Murano, P.} (2014): \emph{A comparative study of
+  the usability of touch-based and mouse-based interaction}.
+\newblock In: Int. J. Pervasive Computing and Communications, \textbf{10}, 1:
+  115--134.
+
+\bibitem[{\textsc{Zhao Xia~Jin}(2007)}]{jin}
+\textsc{Zhao Xia~Jin, L.~K., Tom~Plocher} (2007): \emph{Touch screen user
+  interfaces for older adults: button size and spacing}.
+\newblock In: \textsc{Stephanidis, C.} [Hrsg.]: \emph{Proceedings of the 4th
+  international conference on Universal access in human computer interaction:
+  coping with diversity (UAHCI'07)}, 933--941. Springer Verlag, Berlin,
+  Heidelberg.
+
+\end{thebibliography}
