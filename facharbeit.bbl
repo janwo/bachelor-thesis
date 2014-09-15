@@ -1,53 +1,85 @@
-\begin{thebibliography}{7}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\providecommand{\urlprefix}{URL }
-\providecommand{\selectlanguage}[1]{\relax}
+\begin{thebibliography}{10}
 
-\bibitem[{\textsc{{Apple Inc.}}(2014)}]{applerichtlinien}
-\textsc{{Apple Inc.}} (2014): \emph{iOS Human Interface Guidelines: Layout}.
+\bibitem{applerichtlinien}
+{Apple Inc.}
+\newblock ios human interface guidelines: Layout.
 \newblock
-  \url{https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/LayoutandAppearance.html}.
+  \url{https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/LayoutandAppearance.html},
+  2014.
 \newblock Abrufdatum: 09.08.2014.
 
-\bibitem[{\textsc{Dandekar} \& \textsc{Srinivasan}()}]{monkeys}
-\textsc{Dandekar, R.~B., K.} \& \textsc{Srinivasan, M.} (): \emph{3-D
-  finite-element models of human and monkey fingertips to investigate the
-  mechanics of tactile sense}.
-\newblock In: Journal of biomechanical Engineering, \textbf{125}: 682--691.
-
-\bibitem[{\textsc{D'Orazio}(2012)}]{sonyverge}
-\textsc{D'Orazio, D.} (2012): \emph{Sony Xperia Sola's 'floating touch' screen
-  technology explained}.
+\bibitem{gOne}
+Andreas Brohme.
+\newblock Android one: Google startet seine billig-smartphone-offensive.
 \newblock
-  \url{http://www.theverge.com/2012/3/14/2871193/sony-xperia-sola-floating-touch-hover-event-screen-technology}.
+  \url{http://www.spiegel.de/netzwelt/gadgets/android-one-google-soll-billig-smartphone-bald-praesentieren-a-989376.html},
+  2014.
+\newblock Abrufdatum: 04.09.2014.
+
+\bibitem{monkeys}
+Raju~B.I. Dandekar, K. and M.A. Srinivasan.
+\newblock 3-d finite-element models of human and monkey fingertips to
+  investigate the mechanics of tactile sense.
+\newblock {\em Journal of biomechanical Engineering}, 125:682--691.
+
+\bibitem{dorol}
+Doro Deutschland.
+\newblock Doro liberto 810.
+\newblock
+  \url{http://www.dorodeutschland.de/Produkte/Mobiltelefone-und-Zubehor/Doro-Liberto-810/},
+  2014.
+\newblock Abrufdatum: 24.08.2014.
+
+\bibitem{sonyverge}
+Dante D'Orazio.
+\newblock Sony xperia sola's 'floating touch' screen technology explained.
+\newblock
+  \url{http://www.theverge.com/2012/3/14/2871193/sony-xperia-sola-floating-touch-hover-event-screen-technology},
+  2012.
 \newblock Abrufdatum: 07.08.2014.
 
-\bibitem[{\textsc{{Microsoft Corporation}}(2014)}]{winrichtlinien}
-\textsc{{Microsoft Corporation}} (2014): \emph{Windows App Development:
-  Guidelines for targeting}.
+\bibitem{winrichtlinien}
+{Microsoft Corporation}.
+\newblock Windows app development: Guidelines for targeting.
 \newblock
-  \url{http://msdn.microsoft.com/en-us/library/windows/apps/hh465326.aspx}.
+  \url{http://msdn.microsoft.com/en-us/library/windows/apps/hh465326.aspx},
+  2014.
 \newblock Abrufdatum: 06.08.2014.
 
-\bibitem[{\textsc{{Open Handset Alliance™}}(2014)}]{androidrichtlinien}
-\textsc{{Open Handset Alliance™}} (2014): \emph{Android Developers: Metrics
-  and Grids}.
-\newblock \url{http://developer.android.com/design/style/metrics-grids.html}.
+\bibitem{androidrichtlinien}
+{Open Handset Alliance™}.
+\newblock Android developers: Metrics and grids.
+\newblock \url{http://developer.android.com/design/style/metrics-grids.html},
+  2014.
 \newblock Abrufdatum: 09.08.2014.
 
-\bibitem[{\textsc{Travis} \& \textsc{Murano}(2014)}]{touchmouse}
-\textsc{Travis, C.} \& \textsc{Murano, P.} (2014): \emph{A comparative study of
-  the usability of touch-based and mouse-based interaction}.
-\newblock In: Int. J. Pervasive Computing and Communications, \textbf{10}, 1:
-  115--134.
+\bibitem{mousetouchmk}
+Farzan Sasangohar, I~Scott MacKenzie, and Stacey~D Scott.
+\newblock Evaluation of mouse and touch input for a tabletop display using
+  fitts' reciprocal tapping task.
+\newblock In {\em Proceedings of the Human Factors and Ergonomics Society
+  Annual Meeting}, volume~53, pages 839--843. SAGE Publications, 2009.
 
-\bibitem[{\textsc{Zhao Xia~Jin}(2007)}]{jin}
-\textsc{Zhao Xia~Jin, L.~K., Tom~Plocher} (2007): \emph{Touch screen user
-  interfaces for older adults: button size and spacing}.
-\newblock In: \textsc{Stephanidis, C.} [Hrsg.]: \emph{Proceedings of the 4th
+\bibitem{synaptics}
+Inc. Synaptics.
+\newblock Synaptics touchpad interfacing guide (510-000080-a, second edition).
+\newblock \url{http://www.synaptics.com/sites/default/files/ACF126.pdf}, 1998.
+\newblock Abrufdatum: 18.08.2014.
+
+\bibitem{touchmouse}
+Charlotte Travis and Pietro Murano.
+\newblock A comparative study of the usability of touch-based and mouse-based
+  interaction.
+\newblock {\em Int. J. Pervasive Computing and Communications}, 10(1):115--134,
+  2014.
+
+\bibitem{jin}
+Liana~Kiff Zhao Xia~Jin, Tom~Plocher.
+\newblock Touch screen user interfaces for older adults: button size and
+  spacing.
+\newblock In Constantine Stephanidis, editor, {\em Proceedings of the 4th
   international conference on Universal access in human computer interaction:
-  coping with diversity (UAHCI'07)}, 933--941. Springer Verlag, Berlin,
-  Heidelberg.
+  coping with diversity (UAHCI'07)}, pages 933--941. Springer Verlag, Berlin,
+  Heidelberg, 2007.
 
 \end{thebibliography}
