@@ -1,7 +1,7 @@
 \documentclass[a4paper,12pt,bibliography=totoc]{scrreprt}% ohne Option toc=flat
 \usepackage[utf8]{inputenc}
 \usepackage[hyphens]{url}
-\usepackage{pdfcomment}
+%\usepackage{pdfcomment}
 \usepackage[ngerman]{babel}
 \usepackage{tocstyle}
 \usetocstyle{allwithdot}
@@ -110,6 +110,7 @@
   year={2009},
   organization={SAGE Publications}
 }
+
 @MISC{synaptics,
 	author = "Synaptics, Inc.",
 	year = "1998",
@@ -117,6 +118,29 @@
 	howpublished = "\url{http://www.synaptics.com/sites/default/files/ACF126.pdf}",
 	note = "Abrufdatum: 18.08.2014"
 }
+
+@BOOK{nui,
+ author = {Wigdor, Daniel and Wixon, Dennis},
+ title = {Brave NUI World: Designing Natural User Interfaces for Touch and Gesture},
+ year = {2011},
+ edition = {1st},
+ publisher = {Morgan Kaufmann Publishers Inc.},
+ address = {San Francisco, CA, USA},
+}
+
+@ARTICLE{fitts,
+ author = {MacKenzie, I. Scott},
+ title = {Fitts' Law As a Research and Design Tool in Human-computer Interaction},
+ journal = {Hum.-Comput. Interact.},
+ issue_date = {March 1992},
+ volume = {7},
+ number = {1},
+ year = {1992},
+ pages = {91--139},
+ numpages = {49},
+ publisher = {L. Erlbaum Associates Inc.},
+ address = {Hillsdale, NJ, USA},
+} 
 
 \end{filecontents}
 
@@ -190,9 +214,7 @@
 %Ende des Kopfbereiches
 %-------------------
 
-%-------------------
-%Hier beginnt der Text deiner Hausarbeit
-%-------------------
+%START---------------------------------------------------------------------------------
 \begin{document}
 %Beginn der Titelseite
 \begin{titlepage}
@@ -232,7 +254,7 @@ Daher ist es nicht verwunderlich, dass stetig neue Geräte dieser Art für unter
 
 Aufgrund der Tatsache, dass Anwender von den bisher weit verbreiteten Desktop-PCs und Laptops an große Bedienoberflächen mit umfangreichen Funktionen gewöhnt sind, besteht die Herausforderung auf mobilen Endgeräten auch darin, Anwendungen auf kleineren Bildschirmen ähnlich funktional auszustatten. Dies erfordert eine effiziente Ausnutzung der verfügbaren Bildschirmfläche.\\
 Im Bezug auf die Eingabe zählt bei Desktop-PCs und Laptops die Maus und Tastatur zu den etablierten Eingabegeräten.  Mobile Endgeräte sind jedoch nur dann besonders sinnvoll, wenn keine zusätzlichen Eingabegeräte nötig sind. Damit das Mitführen eines zusätzlichen Eingabegerätes entfällt, erfolgt die Interaktion auf vielen mobilen Endgeräten hauptsächlich über die Fingerberührung unter Mitnutzung zusätzlicher Sensoren, wie z.B. Neigungs- und Lichtsensoren. Zudem stellt sich der Finger als intuitives Eingabegerät heraus und erleichtert damit das Anwählen von Schaltflächen auf dem Bildschirm. Ab einer bestimmten Schaltflächengröße erhöht sich jedoch die Fehlerrate der Interaktion.\cite{mousetouchmk}\\
-Grund hierfür ist der fehlende Mauscursor als indirektes Eingabegerät. Während die Position des Mauszeiger die Position der Interaktion definiert, weicht die Position des Fingers von der Position der Interaktion meist leicht ab, da der Finger eine größere Berührungsfläche besitzt. Zusätzlich verdeckt der Finger durch dessen Größe kleine Schaltflächen, wohingegen der Mauszeiger weiterhin eine präzise Selektion ermöglicht. Um diesem sogenannten "`Fat-Finger-Problem"' \cite{monkeys} entgegenzuwirken, ist die Mindestgröße der Bedienelemente auf diesen Bildschirmen im Vergleich zu Bedienelementen für Mausinteraktionen auf vielen Systemen vergrößert worden.\cite{jin}\\
+Grund hierfür ist der fehlende Mauscursor als indirektes Eingabegerät. Während die Position des Mauszeiger die Position der Interaktion definiert, weicht die Position des Fingers von der Position der Interaktion meist leicht ab, da der Finger eine größere Berührungsfläche besitzt. Zusätzlich verdeckt der Finger durch dessen Größe kleine Schaltflächen, wohingegen der Mauszeiger weiterhin eine präzise Selektion ermöglicht. Um diesem sogenannten "`Fat-Finger-Problem"'\cite{monkeys} entgegenzuwirken, ist die Mindestgröße der Bedienelemente auf diesen Bildschirmen im Vergleich zu Bedienelementen für Mausinteraktionen auf vielen Systemen vergrößert worden.\cite{jin}\\
 Ein weiterer Vorteil der Mausinteraktion gegenüber der Interaktion durch Berührung ist der Umstand, dass die aktuelle Position des Mauscursors auch vor dem Klicken auf die Bedienoberfläche sichtbar ist. Die Positionierung und der Klick mittels des Mauszeigers kann somit unabhängig voneinander erfolgen. Dies ermöglicht das Schweben des Mauszeigers über einer Schaltfläche und wird als "`Hovering"' (engl. "`Schweben"') bezeichnet. Auf Laptops und Desktop-PCs ist dies eine gängige Interaktionsform und wird meist verwendet, um die Eigenschaften von Objekten auf dem Bildschirm, wie z.B. das Aussehen, zu verändern. Durch derartige Eigenschaftsänderungen kann der Anwender das Objekt beispielsweise leichter als Schaltfläche identifizieren.
 \begin{figure}
 \centering
@@ -298,13 +320,21 @@ Windows \cite{winrichtlinien} & 7mm & 9mm\\
 \end{table}
 Aus diesen Gründen sollen die genannten Untersuchungen in dieser Bachelorarbeit somit auch prüfen, ob die Mindestgrößen unter Anwendung der Annäherungserkennung verkleinert werden können und die Präzision somit gesteigert werden kann.
 
-\chapter{Ansätze zur Verbesserung der Usability durch Annäherungserkennung}
-\section{Probleme}
-\subsection{Fat-Finger Problem}
-\subsection{Schaltflächenidentifizierung}
-\section{Verbesserungsvorschläge mittels Annäherungserkennung}
-\subsection{Sichtbare Benutzungshilfen}
-\subsection{Unsichtbare Benutzungshilfen}
+\section{Lösungsansätze mittels Annäherungserkennung}
+Durch die Annäherungserkennung werden Interaktionen auf einer weiteren Ebene ermöglicht und erweitern somit das Repertoire für den Designer einer Anwendung. Sony und Samsung haben mittlerweile Anwendungszenarios für die Annäherungserkennung demonstriert und damit gleichzeitig interessante Lösungen vorgestellt. Dieser Abschnitt soll diese Palette an Möglichkeiten erweitern und gleichzeitig den Bezug zu den behandelten Tests herstellen.
+
+\subsection{Schaltflächenerkennung}
+Das Aussehen einer Schaltfläche variiert zwischen den unterschiedlichen Handymodellen, Betriebssystemen (z.B. iOS, Android) und Gerätetypen. Beispielsweise besitzen Schaltflächen auf einem mobilen Endgerät unter iOS andere Erscheinungsmerkmale als mobile Endgeräte unter Android. Dieser Effekt wird durch die Etablierung des Natural User Interfaces \cite{nui} verstärkt, welches die Abgrenzung zu klassischen Schaltflächen aufweicht. Durch Wischgesten innerhalb bestimmter Bildschirmbereiche werden neue Aktionen ausgeführt. Beispielsweise werden für digitale Karten die klassischen Schaltflächen verstärkt durch Zoom- und Wischgesten ersetzt und ähneln damit der analogen Nutzung von Papierkarten.\\
+Die Folge daraus könnten Schaltflächen sein, die für einzelne Nutzer nicht mehr als solche zu erkennen sind. Während auf Geräten mit Mausinteraktion die Listeneinträge bei Überlagerungen mit dem Mauszeiger hervorgehoben werden und damit als Schaltfläche erkennbar werden, fehlen diese Indikatoren bisher bei Bedienoberflächen für Geräte mit berührungsempfindlichen Bildschirmen. Die Annäherungserkennung könnte diese Lücke direkt füllen und die aktuelle Fingerposition, ähnlich der Mauszeigerposition, in das Erscheinungsbild der Bedienoberfläche einbeziehen.
+
+\subsection{Tabellenhervorhebungen}
+Durch die Annäherungserkennung bietet sich ein interessanter Lösungsansatz für eine mögliche Vereinfachung der Orientierung in vielspaltigen Tabellen an. Beim Suchen von einzelnen Einträgen in großen Tabellen ist bei manchen Nutzern zu beobachten, dass einzelne Zeilen mit dem Finger überfahren werden. Vielleicht könnte dieses Verhalten ausgenutzt werden, um den Nutzer in dieser Situation durch das Hervorheben ganzer Tabellenzeilen zu unterstützen. Aus diesem Grund wird im Rahmen dieser Bachelorarbeit eine derartige Tabellenhervorhebungen implementiert und getestet.
+
+\subsection{Fingerpositionsmarkierungen}
+In vielen Situationen kann es vorkommen, dass sich mehrere Schaltflächen auf engen Raum nebeneinander stehen, z.B. innerhalb unangepasster Webseiten auf kleinen Bildschirmen oder selektierbare Straßenzüge oder Landesgrenzen in Kartenanwendungen bei großen Maßstäben. Durch die Annäherungserkennung ließe sich die aktuell durch den Finger überflogene Schaltfläche hervorheben (vgl. Schaltflächenerkennung) und dadurch die Selektierung durch den Nutzer eventuell vereinfachen. Eine mögliche Verbesserung der Usability durch Fingerpositionsmarkierungen soll im Rahmen dieser Bachelorarbeit überprüft werden.
+
+\subsection{Vorhersage der Touchposition}
+Als Ergänzung zur Fingerpositionsmarkierung wäre mittels der Annäherungserkennung eine Vorhersage der nachfolgenden Touchposition möglich, indem beispielsweise innerhalb eines definierten Radius die Schwebeposition des Fingers die Touchposition korrigiert. Schwebt der Finger eines Nutzer für eine Weile über eine sich hervorhebende Schaltfläche, so würde nach dieser Interpretation selbst eine leicht verfehlte Berührung neben die Schaltfläche ausreichen, um diese auszulösen. Diese Ergänzung soll ebenfalls in einen der Tests in dieser Bachelorarbeit evaluiert werden, um die Genauigkeit auch bei kleineren Schaltflächen zu erhöhen, die die Mindestgrößen laut der Leitfäden für Bedienelementen unterschreiten.
 
 \chapter{Methodik}
 In diesem Kapitel wird erläutert, wie die oben genannten Ansätze anhand von verschiedenen Usability-Tests überprüft wurden.
@@ -330,13 +360,13 @@ Am häufigsten benutzt & 17\% & 44\% & 0\% & 39\% & 0\% \\
 Lediglich eine Person nahm innerhalb der letzten sechs Monate an Studien zu Interaktionen an Mobilgeräten oder an Studien der Digitalen Medien AG der Universität Bremen teil.
 
 \section{Apparat}
-Die Testumgebung bestand aus einem Testgerät und der zugehörigen für die Untersuchungen konzipierten Testanwendung.\\
-Bei dem Testgerät handelte es sich um ein Samsung Galaxy S4. Das darauf installierte Betriebssystem basierte auf Android in der Version 4.4 (API-Level: 19). Der kapazitive Touchscreen des Smartphones mit einer Bildschirmdiagonalen von 5 Zoll besaß eine Auflösung von 1920$\times$1080 Pixeln und unterstützte die Annäherungserkennung. Das Smartphone durfte von den Testpersonen festgehalten, jedoch nicht von der Tischfläche angehoben werden.
+Die Testumgebung besteht aus einem Testgerät und der zugehörigen für die Untersuchungen konzipierten Testanwendung.
 
-Als zweite Komponente beinhaltete die Testumgebung die Testanwendung, die den Testpersonen in zwei verschiedenen Tests unterschiedliche Aufgaben stellte. Dazu gehörte die Anpassung der Bedienoberfläche auf die entsprechende Bildschirmgröße, die Integration der von Samsung dokumentierten API für AirView™ und die Kompilierung mittels des Android-SDKs in Version 19.\\
-Die Testanwendung wurde in Java entwickelt und für das Samsung Galaxy S4 konzipiert. Der Quelltext liegt in digitaler Form auf dem beiliegenden Datenträger dieser Bachelorarbeit vor. Zusätzlich wird an dieser Stelle auch eine installierbare APK-Datei zur Verfügung gestellt.\\
-Die Testanwendung ordnet jeder Testsitzung eine Identifikationsnummer zu, die vor jedem Start auf dem Bildschirm angezeigt wird. Während jeder Testsitzung werden von der Testanwendung alle relevanten Interaktionen des Nutzers protokolliert und mit der zugehörigen Identifikationsnummer in eine Textdatei gespeichert.\\
-Die Testanwendung ist in zwei unterschiedliche Tests unterteilt und wurde so gestaltet, dass diese vor jedem einzelnen Test eine entsprechende Testbeschreibung anzeigt, siehe Abbildung \ref{apparattestbeschreibung}.
+Bei dem Testgerät handelt es sich um ein Samsung Galaxy S4. Das darauf installierte Betriebssystem basiert auf Android in der Version 4.4 (API-Level: 19). Der kapazitive Touchscreen des Smartphones mit einer Bildschirmdiagonalen von 5 Zoll besitzt eine Auflösung von 1920$\times$1080 Pixeln und unterstützt die Annäherungserkennung. Das Smartphone darf während der Tests von den Testpersonen festgehalten, jedoch nicht von der Tischfläche angehoben werden.
+
+Die Testumgebung beinhaltet als zweite Komponente die Testanwendung, die den Testpersonen unterschiedliche Aufgaben stellt. Die Testanwendung wurde in Java entwickelt und eigens für das Samsung Galaxy S4 konzipiert. Dazu wurde zudem die Bedienoberfläche der Testanwendung auf die entsprechende Bildschirmgröße angepasst und die von Samsung dokumentierte API für AirView™ in die Testanwendung integriert. Schließlich wurde die Testanwendung mittels des Android-SDKs in Version 19 kompiliert und auf das Gerät installiert. Der Quelltext liegt in digitaler Form auf dem beiliegenden Datenträger dieser Bachelorarbeit vor. Zusätzlich wird an dieser Stelle auch eine installierbare APK-Datei zur Verfügung gestellt.\\
+Innerhalb der Testanwendung wird zu Beginn jeder Testsitzung eine Identifikationsnummer angezeigt, die für die jeweilige Testsitzung bestimmt wurde. Während jeder Testsitzung werden von der Testanwendung alle relevanten Interaktionen des Nutzers protokolliert und mit der zugehörigen Identifikationsnummer in eine auf dem Gerät angelegten Textdatei gespeichert.\\
+Die Testanwendung ist in zwei unterschiedliche Tests unterteilt und wurde so gestaltet, dass vor jedem Testbeginn eine entsprechende Testbeschreibung angezeigt wird, siehe Abbildung \ref{apparattestbeschreibung}.
 \begin{figure}
 \centering
 \includegraphics[width=0.68\textwidth]{img/apparatus1.jpg}
@@ -353,8 +383,8 @@ Die Testanwendung ist in zwei unterschiedliche Tests unterteilt und wurde so ges
 \caption{Aufbau von Test 1: Drei unterschiedliche Phasen pro Durchgang.}
 \label{test1phasen}
 \end{figure}
-Der erste Test überprüft die Wirkung von Hervorhebungen der Listeneinträge bei Annäherung, siehe Abbildung \ref{test1phasen}.\\
-Hierzu wird dem Nutzer ein Anweisungsbildschirm mit zwei pseudozufälligen Personeneigenschaften eingeblendet. Nachdem der Nutzer sich die Eigenschaften eingeprägt und anschließend auf "`Starten"' gedrückt hat, wird eine mehrspaltige Personenliste mit sieben fikitiven Personen und ihren Eigenschaften angezeigt. Nähert sich der Finger des Nutzers nun einem Listeneintrag, so wird dieser hervorgehoben. Der Test ist so aufgebaut, dass pro Anweisung nur exakt eine Person die gesuchten Eigenschaften besitzt. Der Nutzer hat anschließend eine korrekte Person auszuwählen, indem dabei die Schaltfläche mit dem entsprechenden Personenname (Buchstaben von A-G) berührt wird. Sollte die falsche Schaltfläche berührt werden, so wird der Nutzer mittels einer temporären Texteinblendung (konkret: "`Toast-Notification"') über die Falschberührung informiert und dabei erneut die zu suchenden Eigenschaften angezeigt. War die Personenauswahl korrekt, so werden dem Nutzer erneut Eigenschaften auf dem Anweisungsbildschirm angezeigt. Der Test ist beendet, wenn der Nutzer insgesamt sieben unterschiedliche Anweisungen befolgt hat.\\
+Die Testanwendung ermöglicht im ersten Test, die Wirkung von Hervorhebungen der Listeneinträge bei Annäherung zu überprüfen, siehe Abbildung \ref{test1phasen}.\\
+Hierzu wird dem Nutzer ein Anweisungsbildschirm mit zwei pseudozufälligen Personeneigenschaften eingeblendet. Nachdem der Nutzer sich die Eigenschaften eingeprägt und anschließend auf "`Starten"' gedrückt hat, wird eine mehrspaltige Personenliste mit sieben fikitiven Personen und ihren Eigenschaften angezeigt. Nähert sich der Finger des Nutzers nun einem Listeneintrag, so wird dieser hervorgehoben. Der Test ist so aufgebaut, dass pro Anweisung nur exakt eine Person die gesuchten Eigenschaften besitzt. Der Nutzer hat anschließend eine korrekte Person auszuwählen, indem dabei die Schaltfläche mit dem entsprechenden Personenname (Buchstaben von A-G) berührt wird. Sollte die falsche Schaltfläche berührt werden, so wird der Nutzer mittels einer temporären Texteinblendung (konkret: "`Toast-Notification"') über die Falschberührung informiert und erneut die zu suchenden Eigenschaften angezeigt. War die Personenauswahl korrekt, so werden dem Nutzer in weiteren Runden neue Eigenschaften auf dem Anweisungsbildschirm angezeigt. Der Test ist beendet, wenn der Nutzer insgesamt sieben unterschiedliche Anweisungen befolgt hat.\\
 Damit die Auswahlgeschwindigkeiten nicht durch Lerneffekte verfälscht werden, sind bei jeder Anweisung den Eigenschaften innerhalb der Personenliste pseudozufällig anderen Personen zugeordnet.\\
 Um zu überprüfen, ob die Hervorhebungen der Listeneinträge bei Annäherungen einen Einfluss auf die Aufgabenerfüllung gehabt haben, wird der Test ein zweites Mal wiederholt. Bei der Wiederholung wird dann die Annäherungserkennung zu- oder abgeschaltet.\\
 Die Lerneffekte sollen auch bei der Wiederholung durch eine pseudozufällig veränderte Anweisungsreihenfolge gering gehalten werden.
@@ -368,24 +398,23 @@ Die Lerneffekte sollen auch bei der Wiederholung durch eine pseudozufällig ver�
 \caption{Aufbau von Test 2: Drei unterschiedliche Phasen pro Durchgang.}
 \label{test2phasen}
 \end{figure}
-Der zweite Test konzentriert sich auf die Wirkung von Hervorhebungen auf die empfohlene Mindestgröße von Bedienelementen, siehe Abbildung \ref{test2phasen}.\\
-Die Bedienoberfläche zeigt einen Anweisungstext an, die den Nutzer das das Halten der grünen, runden Schaltfläche am unteren Bildschirmrand hinweist. Um diese Schaltfläche zu halten, muss diese berührt und der Finger nicht angehoben werden. Anschließend läuft für eineinhalb Sekunden ein Fortschrittsbalken ab. Die Testanwendung blendet im nächsten Schritt ein quadratisches Gitter mit quadratischen, grauen Schaltflächen ein. Eine graue Schaltfläche wird pseudozufällig von der Testanwendung ausgewählt und blau koloriert. Der Nutzer hat diese Schaltfläche im Anschluss zu berühren. Ist die Annäherungserkennung aktiviert, wird diejenige Schaltfläche aktiviert, die die momentane Fingerschwebepostion überspannt. Wird nun der Bildschirm berührt, so wird dem Nutzer über die Einblendung eines Anweisungsbildschirms die erfolgreiche oder misslungene Berührung mitgeteilt. Die Berührung gilt als erfolgreich, wenn die blaue Schaltfläche als erstes berührt worden ist.
+Die Testanwendung ermöglicht im zweiten Test, die Wirkung von Hervorhebungen auf die empfohlene Mindestgröße von Bedienelementen zu überprüfen, siehe Abbildung \ref{test2phasen}.\\
+Die Bedienoberfläche zeigt einen Anweisungstext an, die den Nutzer auf das Halten der grünen, runden Schaltfläche am unteren Bildschirmrand hinweist. Um diese Schaltfläche zu halten, muss diese berührt und der Finger nicht angehoben werden. Anschließend läuft für eineinhalb Sekunden ein Fortschrittsbalken ab. Die Testanwendung blendet im nächsten Schritt ein quadratisches Gitter mit quadratischen, grauen Schaltflächen ein. Eine graue Schaltfläche wird pseudozufällig von der Testanwendung ausgewählt und blau koloriert. Der Nutzer hat diese Schaltfläche im Anschluss zu berühren. Ist die Annäherungserkennung aktiviert, wird diejenige Schaltfläche aktiviert, die die momentane Fingerschwebepostion überspannt. Wird nun der Bildschirm berührt, so wird dem Nutzer über die Einblendung eines Anweisungsbildschirms die erfolgreiche oder misslungene Berührung mitgeteilt. Die Berührung gilt als erfolgreich, wenn die blaue Schaltfläche als erstes berührt worden ist.
 Ist die Berührung misslungen, so wird die Kolorierung solange zurückgesetzt, bis der Nutzer die grüne Schaltfläche erneut und für eine zusätzliche Sekunde gehalten hat. Der Nutzer hat anschließend vier weitere Versuche, um die blaue Schaltfläche zu treffen, andernfalls wird der Test vorläufig beendet.
-Bei einer erfolgreichen Berührung wird dem Nutzer neben der bereits erwähnten Benachrichtigung die Erhöhung des Schwierigkeitsgrades signalisiert. Gleichzeitig wird die grüne Schaltfläche wieder am unteren Bildschirmrand eingeblendet und der Nutzer kann den Test im nächsten Schwierigkeitsgrad fortsetzen. Der Test wird beendet, sobald alle Schwierigkeitsgrade von Nutzer bewältigt worden sind.
+Neben den bereits erwähnten Benachrichtigungen, wird bei einer erfolgreichen Berührung dem Nutzer die Erhöhung des Schwierigkeitsgrades signalisiert. Gleichzeitig wird die grüne Schaltfläche wieder am unteren Bildschirmrand eingeblendet und der Nutzer kann den Test im nächsten Schwierigkeitsgrad fortsetzen. Der Test wird beendet, sobald alle Schwierigkeitsgrade von Nutzer bewältigt worden sind.
 
-Die Testanwendung ist so konzipiert, dass beliebig viele Schwierigkeitsgrade und Schaltflächengrößen getestet werden können. Die Größe der Schaltfläche kann für jeden Schwierigkeitsgrad individuell angepasst werden. Die Testanwendung ist so gestaltet, dass neben dem obligatorischen Zeitpunkt der Interaktion sowohl die Position der grünen und blauen Schaltflächen auf dem Bildschirm, als auch die genauen Berührungspunkte auf diesen Schaltflächen selbst protokolliert werden. Im Falle einer eventuelle Formelanwendung nach Fitts Law sind somit alle Parameter für jeden Versuch und Schwierigkeitsgrad vorhanden oder kalkulierbar.
+Die Testanwendung ist so konzipiert, dass beliebig viele Schwierigkeitsgrade und Schaltflächengrößen getestet werden können. Die Größe der Schaltfläche kann für jeden Schwierigkeitsgrad individuell angepasst werden. Die Testanwendung ist so gestaltet, dass neben dem obligatorischen Zeitpunkt der Interaktion sowohl die Position der grünen und blauen Schaltflächen auf dem Bildschirm, als auch die genauen Berührungspunkte auf diesen Schaltflächen selbst protokolliert werden. Im Falle einer eventuelle Formelanwendung nach Fitts \cite{fitts} sind somit alle Parameter für jeden Versuch und Schwierigkeitsgrad vorhanden oder kalkulierbar.
 
 Um auch in diesem Test die Auswirkungen der Annäherungserkennung zu untersuchen, wird dieser Test ebenfalls wiederholt. Bei diesem Test sind hingegen zwei Wiederholungen nötig: Während einer Wiederholung werden die Hervorhebungen zu- oder abgeschaltet, in der anderen die softwareseitige Selektionshilfe.
 
 Die softwareseitige Selektionshilfe manipuliert dabei die Eingabe des Nutzers. Anstatt die tatsächliche Berührungspostions des Fingers zu berücksichtigen, wird die Schwebeposition der Annäherungserkennung verwendet. Diese Manipulation wird jedoch nur getätigt, wenn der Positionsunterschied der Schwebe- und Berührungsposition XXmm unterschreitet.
 
-\subsection{Vermeidung von Gewöhnungen}
-\pdfcomment{Gewöhnungen auch für test 1 hier nennen?}
+\subsection{Ausbalancieren von Gewöhnungseffekten}
 Um etwaige Gewöhnungen an den Tests bzw. andere Beeinflussungen durch vorhergehende Durchgänge auszuschließen, muss die Reihenfolge auf die Testteilnehmer gleichmäßig variiert werden. Hierzu sind die Testpersonen gemäß des Latin Squares in unterschiedliche Gruppen einzuteilen. Aus diesem Grund wurde bei der Konzeption der Testanwendung darauf geachtet, dass die Tests in unterschiedlichen Reihenfolgen gestartet werden können.
 
-Generell erscheinen alle pseudozufälligen Ereignisse nur für den Nutzer rein zufällig. Tatsächlich durchläuft jeder Nutzer in einer bestimmten Gruppe die exakt gleichen Aufgaben. Beispielweise sind die Personeneigenschaften, die Listensortierung und die Anweisungsreihenfolge im ersten Test und die die Kolorierung der blauen Schaltfläche im zweiten Test innerhalb einer Gruppe exakt identisch.
+Die Reihenfolge der Ereignisse ist aus Sicht des Nutzers rein zufällig ausgewählt worden. Tatsächlich durchläuft jeder Nutzer in einer bestimmten Gruppe jedoch die exakt gleichen Aufgaben. Beispielweise sind die Personeneigenschaften, die Listensortierung und die Anweisungsreihenfolge im ersten Test und die die Kolorierung der blauen Schaltfläche im zweiten Test innerhalb einer Gruppe exakt identisch. Die Reihenfolge ist somit pseudozufällig.
 
-\subsection{Kalibrierung}
+\subsection{Kalibrierung der Annäherungserkennung}
 Während der Implementierungsphase des Prototyps konnten im Bezug auf die ermittelte Schwebeposition des Fingers auffallende  Verschiebungen zur tatsächlichen Fingerposition beobachtet werden. Es war somit anzunehmen, dass bei der Annäherungserkennung noch bestehende Ungenauigkeiten vorliegen. Gleichzeitig kann je nach Anstellwinkel des Fingers der dichteste Punkt zum Bildschirm variieren und möglicherweise eine zusätzliche Ungenauigkeit zur Folge haben. Beim internen Testen des Prototypen zeigten sich teilweise deutliche Unterschiede zwischen den Schwebe- und Touchpositionen. Resultierend daraus wurden die kleinen Quadrate im zweiten Test unter Umständen nicht mehr korrekt hervorgehoben, bevor diese schließlich berührt werden würden.
 
 Um die Verschiebungen zwischen der Schwebe- und Touchposition des Fingers nachzuvollziehen, wurde dem Testprototypen eine zusätzliche Ebene innerhalb der Benutzungsoberfläche hinzugefügt, die die letzte Touch- und Schwebeposition anhand von Kreuzen sichtbar machte. Bei internen Versuchen mit dem Testprototypen wurde deutlich, dass in bestimmten Bereichen die beiden Kreuze nicht aufeinander lagen und die Touch- und Schwebeposition sich somit unterschiedlich stark unterschieden.
@@ -428,19 +457,26 @@ Der qualitative Fragebogen bestehend aus überwiegend frei beantwortbaren Fragen
 \caption{Räumlichkeiten, Aufbau und Lichtverhältnisse während der Studie}
 \label{klickschwebepositionen}
 \end{figure}
-Die Studie findet innerhalb eines ruhigen und hellen Raumes statt. Der Testleiter sitzt rechts neben der Testperson an einem Tisch mit ausreichend Platz. Es soll hiermit sichergestellt werden, dass der Test von der Testperson ungestört und bei guten Lichtverhältnissen durchlaufen werden kann.\\
-Jeder Testperson nahm freiwillig teil und wurde direkt nach dem Betreten etwas zu trinken angeboten und nach ihrem Wohlbefinden gefragt. Im Anschluss wurde die Thematik sehr allgemein und knapp beschrieben. Danach wird dem Nutzer ein Studieninformationsblatt ausgehändigt, dass u.A. Anhaltspunkte über den allgemeinen Ablauf und die Datenverarbeitung enthält, siehe Anhang \ref{lab:Studieninformationen}.\\
-Als nächstes wird der Personenfragebogen der Testperson überreicht, die diesen direkt und mit ausreichend Zeit auszufüllen hat.\\
-Damit der Nutzer mit der Annäherungserkennung vertraut wird, wird eine entsprechende Liste zur kurzen Demonstration vorgestellt. Der Nutzer hat die Möglichkeit mit der Liste und eingeschalteter Annäherungserkennung zu interagieren.
+Die Studie findet innerhalb eines ruhigen und hellen Raumes statt. Der Testleiter sitzt rechts neben der Testperson an einem Tisch mit ausreichend Platz. Es soll hiermit sichergestellt werden, dass der Test von der Testperson ungestört und bei guten Lichtverhältnissen durchlaufen werden kann.
+
+Jede Testperson hat ausschließlich freiwillig am Test teilzunehmen. Nach Betreten des Raumes erhält jede Testperson etwas zu trinken und wird zu ihrem Wohlbefinden befragt. Im Anschluss wird die Thematik sehr allgemein und knapp beschrieben. Danach wird der Testperson ein Studieninformationsblatt ausgehändigt, dass u.A. Anhaltspunkte über den allgemeinen Ablauf und die Datenverarbeitung enthält, siehe Anhang \ref{lab:Studieninformationen}.\\
+Als nächstes wird ein Personenfragebogen der Testperson überreicht, die diesen direkt und mit ausreichend Zeit auszufüllen hat.\\
+Damit die Testperson mit der Annäherungserkennung vertraut gemacht wird, stellt der Testleiter eine entsprechende Liste zur kurzen Demonstration vor. Die Testperson hat die Möglichkeit mit der Liste bei eingeschalteter Annäherungserkennung zu interagieren.
 
 Anschließend wird die Testanwendung konfiguriert. Der Testleiter startet einen neuen Test mit der Angabe der korrekten Testgruppe und notiert dann die in der Testanwendung dargestellte Identifikationsnummer auf die vorhergesehenen Felder auf den Fragebögen. Die Testumgebung wird nun der Testperson übergeben. Die Testperson wird gebeten, die Testbeschreibung durchzulesen und mögliche Fragen zu äußern. Sobald alle Fragen geklärt sind, beginnt die Testperson mit dem ersten Test.\\
 Hat die Testperson den Test absolviert, wird ihr der System Usability Scale überreicht. Die Testperson hat diesen nun nach "`Bauchgefühl'" auszufüllen und kann im Anschluss mit der Wiederholung fortfahren.\\
-Wurde auch für erste Wiederholung der System Usability Scale ausgefüllt, leitet der Testleiter den zweiten Test ein. Die Testperson wird erneut gebeten, die Testbeschreibung durchzulesen und mögliche Fragen anzuzeigen. Danach kann die Testperson mit dem Test beginnen. Die Testanwendung ist so konfiguriert, dass in diesem Test von der Testperson bis zu 26 Schwierigkeitsgrade absolviert werden können. Die Schaltflächengröße wurde mit höheren Schwierigkeitsgrad verringert. Dieser Test wird zwei Mal wiederholt und jede Wiederholung ebenfalls mit einem System Usability Scale abgeschlossen.
+Wurde auch für erste Wiederholung der System Usability Scale ausgefüllt, leitet der Testleiter den zweiten Test ein. Die Testperson wird erneut gebeten, die Testbeschreibung durchzulesen und mögliche Fragen anzuzeigen. Danach kann die Testperson mit dem Test beginnen. Die Testanwendung ist so konfiguriert, dass in diesem Test von der Testperson bis zu 27 Schwierigkeitsgrade absolviert werden können. Die Schaltflächengröße wurde mit höheren Schwierigkeitsgrad verringert. Insgesamt wird der Test zwei Mal wiederholt und jede Wiederholung ebenfalls mit einem System Usability Scale abgeschlossen.
 
-Wurden alle Tests der Testanwendung vollständig absolviert, befragt der Testleiter die Testperson abschließend gemäß des qualitativen Fragebogens und notiert die gegebenen Antworten für die Testperson auf dem Fragebogen, um möglichst viel Rückmeldung zu erhalten. 
+Wurden alle Tests der Testanwendung vollständig absolviert, befragt der Testleiter die Testperson abschließend gemäß des qualitativen Fragebogens und notiert die gegebenen Antworten für die Testperson auf dem Fragebogen, um eine möglichst ausführliche Rückmeldung zu erhalten. 
 
 \section{Design}
-Die Seitenlänge der grauen Schaltflächen beginnt bei XXmm und verringert sich bis auf Xmm.
+Die gesamte Testsitzung ist aufgeteilt in zwei Tests und ein 1x2 bzw. 2x27, within-subjects Design.
+
+Der erste Test berücksichtigt die unabhängige Variable {\tt Annäherungserkennung} mit den nominalen Zuständen {\tt ausgeschaltet} und {\tt eingeschaltet}. Der erste Test besitzt somit zwei Settings. Die abhängige Variable {\tt Zeit} beschreibt die Zeitspanne (in ms) zwischen der Listeneinblendung bis zur richtigen Selektion der gesuchten Person. Bei Fehlselektionen wird die Variable nicht zurückgesetzt.
+
+Der zweite Test berücksichtigt zwei unabhängige Variablen, {\tt Schaltflächengröße} und {\tt Annäherungserkennung}. Die unabhängige Variable {\tt Schaltflächengröße} besitzt 27 rationale Zustände, beginnend bei \emph{10mm} und endend bei \emph{1.4mm}. Die unabhängige Variable {\tt Annäherungserkennung} besitzt die nominalen Zustände \emph{ausgeschaltet}, \emph{eingeschaltet} und \emph{eingeschaltet mit Selektionshilfe}. Der Test ermittelt für jedes Setting die Werte von vier abhängigen Variablen: Die {\tt Gesamtzeit} (in ms) gibt die Zeitspanne zwischen der Blaufärbung der Zielschaltfläche bis zur Berührung dieser Schaltfläche an - bei Fehlberührungen wird die Variable nicht zurückgesetzt. Die abhängige Variable {\tt Zeit} wird dabei vor jedem Neuversuch zurückgesetzt. Die {\tt Fehlerzahl} gibt die Anzahl der Fehlberührungen an. Diese Variable wird den Wert \emph{4} nicht übersteigen, da nach dem vierten Fehlversuch der Test vorzeitig beendet wird. In diesem Fall wird die abhängige Variable {\tt Abbrüche} von \emph{0} auf \emph{1} gesetzt.
+
+Um ein Counterbalancing zu erwirken, wurden gemäß des Latin Squares die Tests in mehrere Reihenfolgen durchlaufen. Der erste Test benötigt gemäß der Zustandsanzahl der unabhängigen Variable {\tt Annäherungserkennung} zwei Reihenfolgen. Der zweite Test muss für ein entsprechendes Counterbalancing aufgrund des zusätzlichen Zustands \emph{eingeschaltet mit Selektionshilfe} mit drei verschiedenen Reihenfolgen getestet werden.
 
 \chapter{Ergebnisse}
 
@@ -452,42 +488,45 @@ Die Seitenlänge der grauen Schaltflächen beginnt bei XXmm und verringert sich 
 
 
 \chapter{Diskussion}
+menschen dachten test1 liste ist schaltfläche
 
 \section{Vergleich zu den bisherigen Leitfäden}
+
 
 \section{Ausblick}
 Multi-Hover-Touch
 Offset
-Lorem Ipsum hier kommt die Fazipsum.
 
 \chapter{Fazit}
+Lorem Ipsum hier kommt die Fazipsum.
 
 \begin{appendix} 
 \chapter{Anhang}
-
+\newpage
 \section{Studieninformationen}
-\includegraphics[width=\textwidth]{apx/Studieninformationen} 
+\frame{\includegraphics[width=\textwidth, page=1]{apx/Studieninformationen}}
 \label{lab:Studieninformationen}
 
 \section{Personenfragebogen}
-\includegraphics[width=\textwidth, page=1]{apx/Personenfragebogen} 
+\frame{\includegraphics[width=\textwidth, page=1]{apx/Personenfragebogen}}
 \label{lab:Personenfragebogen}
 
-\includegraphics[width=\textwidth, page=2]{apx/Personenfragebogen}
+\frame{\includegraphics[width=\textwidth, page=2]{apx/Personenfragebogen}}
  
 \section{Bewertungsbögen}
-\includegraphics[width=\textwidth, page=1]{apx/Bewertungsboegen}
+\frame{\includegraphics[width=\textwidth, page=1]{apx/Bewertungsboegen}}
 \label{lab:Bewertungsbögen}
 
-\includegraphics[width=\textwidth, page=2]{apx/Bewertungsboegen}
+\frame{\includegraphics[width=\textwidth, page=2]{apx/Bewertungsboegen}}
 
-\includegraphics[width=\textwidth, page=3]{apx/Bewertungsboegen}
+\frame{\includegraphics[width=\textwidth, page=3]{apx/Bewertungsboegen}}
 
-\includegraphics[width=\textwidth, page=4]{apx/Bewertungsboegen}
+\frame{\includegraphics[width=\textwidth, page=4]{apx/Bewertungsboegen}}
 
-\includegraphics[width=\textwidth, page=5]{apx/Bewertungsboegen} 
+\frame{\includegraphics[width=\textwidth, page=5]{apx/Bewertungsboegen}}
 
-\includegraphics[width=\textwidth, page=6]{apx/Bewertungsboegen}
+\frame{\includegraphics[width=\textwidth, page=6]{apx/Bewertungsboegen}}
+
 \end{appendix}
 
 \chapter*{Danksagung}
@@ -504,11 +543,9 @@ Besonders bedanken möchte ich mich bei\dots
 \end{itemize}
 
 %ENDE-----------------------------------------------------------------------------------
-%Beginn einer neuen Seite
 \clearpage
 \bibliographystyle{plain}
 \bibliography{books}
-\newpage
 \chapter*{Erklärung}
 Ich versichere hiermit, dass ich die vorliegende Bachelorarbeit selbständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe. Die Arbeit wurde keiner anderen Prüfungsbehörde vorgelegt und auch nicht veröffentlicht.
 \begin{center}
@@ -518,6 +555,3 @@ Ich versichere hiermit, dass ich die vorliegende Bachelorarbeit selbständig ver
 \end{tabular} 
 \end{center}
 \end{document}
-%-------------------
-%Hier endet der Text der Bachelorarbeit.
-%-------------------
