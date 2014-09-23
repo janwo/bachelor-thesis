@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt,bibliography=totoc]{scrreprt}% ohne Option toc=flat
+\documentclass[a4paper,BCOR2mm,12pt,bibliography=totoc,listof=totoc,abstracton]{scrreprt}
 \usepackage[utf8]{inputenc}
 \usepackage[hyphens]{url}
 %\usepackage{pdfcomment}
@@ -10,207 +10,149 @@
 \usepackage{graphicx} 
 \usepackage{subfigure} 
 \usepackage{filecontents}
+\usepackage[T1]{fontenc}
+\usepackage{pifont}
+\usepackage{setspace}
+\usepackage[paper=a4paper,left=30mm,right=30mm,top=30mm,bottom=30mm]{geometry}
+
 \begin{filecontents}{books.bib}
 
 @MISC{winrichtlinien,
-	author = "{Microsoft Corporation}",
-	year = "2014",
-	title = "Windows App Development: Guidelines for targeting",
-	howpublished = "\url{http://msdn.microsoft.com/en-us/library/windows/apps/hh465326.aspx}",
-	note = "Abrufdatum: 06.08.2014"
+author = "{Microsoft Corporation}",
+year = "2014",
+title = "Windows App Development: Guidelines for targeting",
+howpublished = "\url{http://msdn.microsoft.com/en-us/library/windows/apps/hh465326.aspx}",
+note = "Zuletzt aufgerufen am 06.08.2014"
 }
 
 @MISC{applerichtlinien,
-	author = "{Apple Inc.}",
-	year = "2014",
-	title = "iOS Human Interface Guidelines: Layout",
-	howpublished = "\url{https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/LayoutandAppearance.html}",
-	note = "Abrufdatum: 09.08.2014"
+author = "{Apple Inc.}",
+year = "2014",
+title = "iOS Human Interface Guidelines: Layout",
+howpublished = "\url{https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/LayoutandAppearance.html}",
+note = "Zuletzt aufgerufen am 09.08.2014"
 }
 
 @MISC{androidrichtlinien,
-	author = "{Open Handset Alliance™}",
-	year = "2014",
-	title = "Android Developers: Metrics and Grids",
-	howpublished = "\url{http://developer.android.com/design/style/metrics-grids.html}",
-	note = "Abrufdatum: 09.08.2014"
+author = "{Open Handset Alliance™}",
+year = "2014",
+title = "Android Developers: Metrics and Grids",
+howpublished = "\url{http://developer.android.com/design/style/metrics-grids.html}",
+note = "Zuletzt aufgerufen am 09.08.2014"
 }
 
 @MISC{sonyverge,
-	author = "Dante D'Orazio",
-	year = "2012",
-	title = "Sony Xperia Sola's 'floating touch' screen technology explained",
-	howpublished = "\url{http://www.theverge.com/2012/3/14/2871193/sony-xperia-sola-floating-touch-hover-event-screen-technology}",
-	note = "Abrufdatum: 07.08.2014"
+author = "Dante D'Orazio",
+year = "2012",
+title = "Sony Xperia Sola's 'floating touch' screen technology explained",
+howpublished = "\url{http://www.theverge.com/2012/3/14/2871193/sony-xperia-sola-floating-touch-hover-event-screen-technology}",
+note = "Zuletzt aufgerufen am 07.08.2014"
 }
 
 @ARTICLE{monkeys,
-  author = "Dandekar, K., Raju, B.I. and Srinivasan, M.A.",
-  title = "3-D finite-element models of human and monkey fingertips to investigate the mechanics of tactile sense",
-  pages = "682-691",
-  year = "2003",
-  journal = "Journal of biomechanical Engineering",
-  volume = "125"
+author = "K. Dandekar, B.I. Raju, M.A. Srinivasan",
+title = "3-D finite-element models of human and monkey fingertips to investigate the mechanics of tactile sense",
+pages = "S. 682-691",
+year = "2003",
+journal = "Journal of biomechanical Engineering",
+volume = "125"
 }
 
 @INCOLLECTION{jin,
-  author = "Zhao Xia Jin, Tom Plocher, Liana Kiff",
-  title = "Touch screen user interfaces for older adults: button size and spacing",
-  booktitle = "Proceedings of the 4th international conference on Universal access in human computer interaction: coping with diversity (UAHCI'07)",
-  publisher = "Springer Verlag",
-  year = "2007",
-  editor = "Constantine Stephanidis",
-  pages = "933-941",
-  address = "Berlin, Heidelberg"
+author = "Zhao Xia Jin, Tom Plocher, Liana Kiff",
+title = "Touch screen user interfaces for older adults: button size and spacing",
+booktitle = "Proceedings of the 4th international conference on Universal access in human computer interaction: coping with diversity (UAHCI'07)",
+publisher = "Springer Verlag",
+year = "2007",
+editor = "Constantine Stephanidis",
+pages = "933-941",
+address = "Berlin, Heidelberg"
 }
 
 @ARTICLE{touchmouse,
-  author = "Charlotte Travis and Pietro Murano",
-  title = "A comparative study of the usability of touch-based and mouse-based interaction",
-  journal = "Int. J. Pervasive Computing and Communications",
-  volume = "10",
-  number = "1",
-  year = "2014",
-  pages = "115-134"
+author = "Charlotte Travis, Pietro Murano",
+title = "A comparative study of the usability of touch-based and mouse-based interaction",
+journal = "Int. J. Pervasive Computing and Communications",
+volume = "10",
+number = "1",
+year = "2014",
+pages = "115-134"
 }
 
 @MISC{dorol,
-	author = "Doro Deutschland",
-	year = "2014",
-	title = "Doro Liberto 810",
-	howpublished = "\url{http://www.dorodeutschland.de/Produkte/Mobiltelefone-und-Zubehor/Doro-Liberto-810/}",
-	note = "Abrufdatum: 24.08.2014"
+author = "{Doro Deutschland}",
+year = "2014",
+title = "Doro Liberto 810",
+howpublished = "\url{http://www.dorodeutschland.de/Produkte/Mobiltelefone-und-Zubehor/Doro-Liberto-810/}",
+note = "Zuletzt aufgerufen am 24.08.2014"
 }
 
 @MISC{gOne,
-	author = "Andreas Brohme",
-	year = "2014",
-	title = "Android One: Google startet seine Billig-Smartphone-Offensive",
-	howpublished = "\url{http://www.spiegel.de/netzwelt/gadgets/android-one-google-soll-billig-smartphone-bald-praesentieren-a-989376.html}",
-	note = "Abrufdatum: 04.09.2014"
+author = "Andreas Brohme",
+year = "2014",
+title = "Android One: Google startet seine Billig-Smartphone-Offensive",
+howpublished = "\url{http://www.spiegel.de/netzwelt/gadgets/android-one-google-soll-billig-smartphone-bald-praesentieren-a-989376.html}",
+note = "Zuletzt aufgerufen am 04.09.2014"
 }
 
-@inproceedings{mousetouchmk,
-  title={Evaluation of mouse and touch input for a tabletop display using Fitts' reciprocal tapping task},
-  author={Sasangohar, Farzan and MacKenzie, I Scott and Scott, Stacey D},
-  booktitle={Proceedings of the Human Factors and Ergonomics Society Annual Meeting},
-  volume={53},
-  number={12},
-  pages={839--843},
-  year={2009},
-  organization={SAGE Publications}
-}
-
-@inproceedings{mousetouchmk,
-  title={Evaluation of mouse and touch input for a tabletop display using Fitts' reciprocal tapping task},
-  author={Sasangohar, Farzan and MacKenzie, I Scott and Scott, Stacey D},
-  booktitle={Proceedings of the Human Factors and Ergonomics Society Annual Meeting},
-  volume={53},
-  number={12},
-  pages={839--843},
-  year={2009},
-  organization={SAGE Publications}
+@INPROCEEDINGS{mousetouchmk,
+author = "Farzan Sasangohar, I. Scott MacKenzie, Stacey D. Scott",
+title = "Evaluation of mouse and touch input for a tabletop display using Fitts' reciprocal tapping task",
+booktitle = "Proceedings of the Human Factors and Ergonomics Society Annual Meeting",
+volume = "53",
+number = "12",
+pages = "839-843",
+year = "2009", 
+organization = "SAGE Publications"
 }
 
 @MISC{synaptics,
-	author = "Synaptics, Inc.",
-	year = "1998",
-	title = "Synaptics TouchPad Interfacing Guide (510-000080-A, Second Edition)",
-	howpublished = "\url{http://www.synaptics.com/sites/default/files/ACF126.pdf}",
-	note = "Abrufdatum: 18.08.2014"
+author = "{Synaptics Inc.}",
+year = "1998",
+title = "Synaptics TouchPad Interfacing Guide (510-000080-A, Second Edition)",
+howpublished = "\url{http://www.synaptics.com/sites/default/files/ACF126.pdf}",
+note = "Zuletzt aufgerufen am 18.08.2014"
 }
 
 @BOOK{nui,
- author = {Wigdor, Daniel and Wixon, Dennis},
- title = {Brave NUI World: Designing Natural User Interfaces for Touch and Gesture},
- year = {2011},
- edition = {1st},
- publisher = {Morgan Kaufmann Publishers Inc.},
- address = {San Francisco, CA, USA},
+author = "Daniel Wigdor, Dennis Wixon},
+title = "Brave NUI World: Designing Natural User Interfaces for Touch and Gesture",
+year = "2011",
+edition = "1st",
+publisher = "Morgan Kaufmann Publishers Inc.",
+address = "San Francisco, CA, USA",
 }
 
 @ARTICLE{fitts,
- author = {MacKenzie, I. Scott},
- title = {Fitts' Law As a Research and Design Tool in Human-computer Interaction},
- journal = {Hum.-Comput. Interact.},
- issue_date = {March 1992},
- volume = {7},
- number = {1},
- year = {1992},
- pages = {91--139},
- numpages = {49},
- publisher = {L. Erlbaum Associates Inc.},
- address = {Hillsdale, NJ, USA},
+author = "I. Scott MacKenzie",
+title = "Fitts' Law As a Research and Design Tool in Human-computer Interaction",
+journal = "Hum.-Comput. Interact.",
+issue_date = "March 1992",
+volume = "7",
+number = "1",
+year = "1992",
+pages = "91-139",
+numpages = "49",
+publisher = "L. Erlbaum Associates Inc.",
+address = "Hillsdale, NJ, USA",
 } 
 
 \end{filecontents}
 
-%############## BEISPIELE
-%INTERNETSEITE###############
-% @inproceedings{inhaus,
-%    author={Klaus Scherer},
-%    title={Das Potenzial intelligenter Haustechnik
-% für ehome-care},
-%    publisher={Präsentation auf der ZTG-Tagung am 09.05.2006, Krefeld},
-%    year={2006}
-%}
-%
-%INTERNETSEITE###############
-%@book{rfid,
-%  title={RFID-Handbuch: Grundlagen und praktische Anwendungen von Transpondern,  % kontaktlosen Chipkarten und NFC},
-%  author={Finkenzeller, K.},
-%  isbn={9783446412002},
-%  year={2008},
-%  publisher={Hanser, Carl}
-%}
-%
-%INTERNETSEITE###############
-%@incollection{lev1,
-%  author={Lev Manovich},
-%  title={Die Poetik des erweiterten Raumes},
-%  pages={337-349},
-%  booktitle={Topos Raum: Die Aktualit{\"a}t Des Raumes in Den K{\"u}nsten Der %Gegenwart},
-%  editor={Lammert, A. and {Akademie der K{\"u}nste Berlin}},
-%  isbn={9783938821077},
-%  lccn={2006483669},
-%  year={2005},
-%  publisher={Verlag f{\"u}r Moderne Kunst},
-%  address={Nürnberg}
-%}
-%
-%INTERNETSEITE###############
-%@misc{linden,
-%year = 2012,
-%  key = {linden},
-%  title = "ABOUT LINDEN LAB",
-%  howpublished="\url{http://lindenlab.com/about}",
-%note="Abrufdatum: 10.09.2012"
-%}
-%
-%INTERNETSEITE MIT AUTHOR##############
-%@misc{stereo,
-%year = 1997,
-%  author ="{van Ackern}, N. and Lindenberg, Markus",
-%   title = "Räumliches Hören",
-%  howpublished="\url{http://irtel.uni-mannheim.de/lehre/seminararbeiten/w96/Hoeren1/Hoeren1.html}",
-%note="Abrufdatum: 27.03.2012"
-% }
-
-\usepackage[T1]{fontenc}
-%PHONE LETTER SYMBOLS
-\usepackage{pifont}
-%Das Paket wird fuer die anderthalb-zeiligen Zeilenabstand bentigt
-\usepackage{setspace}
 %Abstand eines neuen Absatzes
 \setlength{\parskip}{1em}
 \setlength{\parindent}{0em}
-%Definition der Raender
-\usepackage[paper=a4paper,left=30mm,right=30mm,top=30mm,bottom=30mm]{geometry}
+
 %Abstand der Fussnoten
 \deffootnote{1em}{1em}{\textsuperscript{\thefootnotemark\ }}
-%Regeln, bis zu welcher Tiefe (section,subsection,subsubsection) Überschriften angezeigt werden sollen (Anzeige der berschriften im Verzeichnis / Anzeige der Nummerierung)
-\setcounter{tocdepth}{2}
+
+%Zeilenabstand
+\onehalfspacing
+
+%Regeln, bis zu welcher Tiefe Überschriften angezeigt werden sollen (Anzeige der berschriften im Verzeichnis / Anzeige der Nummerierung)
+\setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
+
 %-------------------
 %Ende des Kopfbereiches
 %-------------------
@@ -225,9 +167,9 @@
 \begin{Large}
 \textsf{\textbf{Unterstützung der Touchinteraktion durch Annäherungserkennung auf Smartphones.}}
 \end{Large}\linebreak \linebreak 
-\begin{large}
+%\begin{large}
 %\textsf{Auswirkungen der Hover-Erkennung auf die Präzision und Geschwindigkeit bei Interaktionen auf mobilen Endgeräten.}Empirische Untersuchung mittels eines Prototypen zur Ermittlung von Auswirkungen der Hover-Erkennung auf Präzision und Geschwindigkeit bei Interaktionen auf mobilen Endgeräten.
-\end{large}
+%\end{large}
 \begin{small}
 \vfill{Jan-Hendrik Wolf \\ Matrikelnummer: 2616233 \\ Mainstraße 36 \\  28199 Bremen \\\ding{38} 0151 15530761\\\ding{41} mail@jan-wolf.de \\\vspace{3cm} Universität Bremen\\ Digitale Medien B. Sc. \\ Sommersemester 2014}
 \null
@@ -240,9 +182,7 @@
 \tableofcontents
 \thispagestyle{empty}
 %Beginn einer neuen Seite
-\clearpage
-%Anderthalbzeiliger Zeilenabstand ab hier
-\onehalfspacing
+
 \pagestyle{plain}
 
 %START-----------------------------------------------------------------------------------
@@ -421,7 +361,7 @@ Während der Implementierungsphase des Prototyps konnten im Bezug auf die ermitt
 
 Um die Verschiebungen zwischen der Schwebe- und Touchposition des Fingers nachzuvollziehen, wurde dem Testprototypen eine optional zuschaltbare Ebene innerhalb der Benutzungsoberfläche hinzugefügt, die die letzte Touch- und Schwebeposition anhand von Kreuzen sichtbar machte. Bei internen Versuchen mit dem Testprototypen wurde deutlich, dass in bestimmten Bereichen die beiden Kreuze nicht aufeinander lagen und die Touch- und Schwebeposition sich somit unterschiedlich stark unterschieden.
 
-Um mögliche Zusammenhänge der Verschiebungen zwischen der Schwebe- und Touchposition des Fingers nachzuweisen, wurde eine Testanwendung implementiert, die die letzte Schwebe- und Touchposition aufzeichnete. Dabei sollten Nutzer eine Abfolge von verschiedenen Punkte auf dem Bildschirm berühren. Die jeweiligen Schwebe- und Touchpositionen waren für die Testperson zu diesem Zeitpunkt nicht sichtbar und wurden erst nach dem eigentlichen Test visualisiert.
+Um mögliche Zusammenhänge der Verschiebungen zwischen der Touch- und Schwebeposition des Fingers nachzuweisen, wurde eine Testanwendung implementiert, die die letzte Schwebe- und Touchposition aufzeichnete. Dabei sollten Nutzer eine Abfolge von verschiedenen Punkte auf dem Bildschirm berühren. Die jeweiligen Schwebe- und Touchpositionen waren für die Testperson zu diesem Zeitpunkt nicht sichtbar und wurden erst nach dem eigentlichen Test visualisiert.
 \begin{figure}
 \centering
 \subfigure[Interaktion mit dem Finger]{\includegraphics[width=0.45\textwidth]{img/kalibrierung1_finger.png}}
@@ -455,9 +395,9 @@ Der qualitative Fragebogen bestehend aus überwiegend frei beantwortbaren Fragen
 \subfigure[Testumgebung und Fragebögen]{\includegraphics[width=0.67\textwidth]{img/prozedur2.jpg}}
 \subfigure[Testperson füllt Personenfragebogen aus]{\includegraphics[width=0.67\textwidth]{img/prozedur3.jpg}}
 \caption{Räumlichkeiten, Aufbau und Lichtverhältnisse während der Studie}
-\label{klickschwebepositionen}
+\label{prozedurumgebung}
 \end{figure}
-Die Studie findet innerhalb eines ruhigen und hellen Raumes statt. Der Testleiter sitzt rechts neben der Testperson an einem Tisch mit ausreichend Platz. Es soll hiermit sichergestellt werden, dass der Test von der Testperson ungestört und bei guten Lichtverhältnissen durchlaufen werden kann.
+Die Studie findet innerhalb eines ruhigen und hellen Raumes statt, siehe Abbildung \ref{prozedurumgebung}. Der Testleiter sitzt rechts neben der Testperson an einem Tisch mit ausreichend Platz. Es soll hiermit sichergestellt werden, dass der Test von der Testperson ungestört und bei guten Lichtverhältnissen durchlaufen werden kann.
 
 Jede Testperson hat ausschließlich freiwillig am Test teilzunehmen. Nach Betreten des Raumes erhält jede Testperson etwas zu trinken und wird zu ihrem Wohlbefinden befragt. Im Anschluss wird die Thematik sehr allgemein und knapp beschrieben. Danach wird der Testperson ein Studieninformationsblatt ausgehändigt, dass u.A. Anhaltspunkte über den allgemeinen Ablauf und die Datenverarbeitung enthält, siehe Anhang \ref{lab:Studieninformationen}.\\
 Als nächstes wird ein Personenfragebogen der Testperson überreicht, die diesen direkt und mit ausreichend Zeit auszufüllen hat.\\
@@ -472,12 +412,12 @@ Wurden alle Tests der Testanwendung vollständig absolviert, befragt der Testlei
 \section{Design}
 Die gesamte Testsitzung ist aufgeteilt in zwei Tests. Der erste Test besitzt einen Faktor mit zwei Levels und der zweite Test ist ein 3x26 Design. Beide Test sind within-subjects.
 
-Der erste Test berücksichtigt die unabhängige Variable {\tt Annäherungserkennung} mit den nominalen Zuständen {\tt ausgeschaltet} und {\tt eingeschaltet}. Der erste Test besitzt somit zwei Settings. Die abhängige Variable {\tt Zeit} beschreibt die Zeitspanne (in ms) zwischen der Listeneinblendung bis zur richtigen Selektion der gesuchten Person. Bei Fehlselektionen wird die Variable nicht zurückgesetzt.
+Der erste Test berücksichtigt die unabhängige Variable {\ttfamily Annäherungserkennung} mit den nominalen Zuständen {\ttfamily ausgeschaltet} und {\ttfamily eingeschaltet}. Der erste Test besitzt somit zwei Settings. Die abhängige Variable {\ttfamily Zeit} beschreibt die Zeitspanne (in ms) zwischen der Listeneinblendung bis zur richtigen Selektion der gesuchten Person. Bei Fehlselektionen wird die Variable nicht zurückgesetzt.
 
-Der zweite Test berücksichtigt zwei unabhängige Variablen, {\tt Schaltflächengröße} und {\tt Annäherungserkennung}. Die unabhängige Variable {\tt Schaltflächengröße} besitzt 26 rationale Zustände, beginnend bei \emph{10mm} und endend bei \emph{1.4mm}. Die unabhängige Variable {\tt Annäherungserkennung} besitzt die nominalen Zustände \emph{ausgeschaltet}, \emph{eingeschaltet} und \emph{eingeschaltet mit Selektionshilfe}. Der Test ermittelt für jedes Setting die Werte von vier abhängigen Variablen: Die {\tt Gesamtzeit} (in ms) gibt die Zeitspanne zwischen der Blaufärbung der Zielschaltfläche bis zur Berührung dieser Schaltfläche an - bei Fehlberührungen wird die Variable nicht zurückgesetzt. Die abhängige Variable {\tt Zeit} wird dabei vor jedem Neuversuch zurückgesetzt. Die {\tt Fehlerzahl} gibt die Anzahl der Fehlberührungen an. Diese Variable wird den Wert \emph{5} nicht übersteigen, da nach dem vierten Fehlversuch der Test vorzeitig beendet und der Wert auf \emph{5} erhöht wird. Bei einem Testabbruch wird zusätzlich die abhängige Variable {\tt Abbrüche} von \emph{0} auf \emph{1} gesetzt.\\
-Sollten einige Settings aufgrund eines Testabbruchs übersprungen worden sein, so bleiben für diese Settings die abhängigen Variablen {\tt Zeit} und {\tt Gesamtzeit} in der Auswertung unberücksichtigt. Die abhängige Variable {\tt Fehlerzahl} wird in diesem Fall auf den Wert \emph{5} und die abhängige Variable {\tt Abbrüche} auf den Wert \emph{1} gesetzt.
+Der zweite Test berücksichtigt zwei unabhängige Variablen, {\ttfamily Schaltflächengröße} und {\ttfamily Annäherungserkennung}. Die unabhängige Variable {\ttfamily Schaltflächengröße} besitzt 26 rationale Zustände, beginnend bei \emph{10mm} und endend bei \emph{1.4mm}. Die unabhängige Variable {\ttfamily Annäherungserkennung} besitzt die nominalen Zustände \emph{ausgeschaltet}, \emph{eingeschaltet} und \emph{eingeschaltet mit Selektionshilfe}. Der Test ermittelt für jedes Setting die Werte von vier abhängigen Variablen: Die {\ttfamily Gesamtzeit} (in ms) gibt die Zeitspanne zwischen der Blaufärbung der Zielschaltfläche bis zur Berührung dieser Schaltfläche an - bei Fehlberührungen wird die Variable nicht zurückgesetzt. Die abhängige Variable {\ttfamily Zeit} wird dabei vor jedem Neuversuch zurückgesetzt. Die {\ttfamily Fehlerzahl} gibt die Anzahl der Fehlberührungen an. Diese Variable wird den Wert \emph{5} nicht übersteigen, da nach dem vierten Fehlversuch der Test vorzeitig beendet und der Wert auf \emph{5} erhöht wird. Bei einem Testabbruch wird zusätzlich die abhängige Variable {\ttfamily Abbrüche} von \emph{0} auf \emph{1} gesetzt.\\
+Sollten einige Settings aufgrund eines Testabbruchs übersprungen worden sein, so bleiben für diese Settings die abhängigen Variablen {\ttfamily Zeit} und {\ttfamily Gesamtzeit} in der Auswertung unberücksichtigt. Die abhängige Variable {\ttfamily Fehlerzahl} wird in diesem Fall auf den Wert \emph{5} und die abhängige Variable {\ttfamily Abbrüche} auf den Wert \emph{1} gesetzt.
 
-Um ein Counterbalancing zu erwirken, wurden gemäß des Latin Squares die Tests in mehrere Reihenfolgen durchlaufen. Der erste Test benötigt gemäß der Zustandsanzahl der unabhängigen Variable {\tt Annäherungserkennung} zwei Reihenfolgen. Der zweite Test muss für ein entsprechendes Counterbalancing aufgrund des zusätzlichen Zustands \emph{eingeschaltet mit Selektionshilfe} mit drei verschiedenen Reihenfolgen getestet werden.
+Um ein Counterbalancing zu erwirken, wurden gemäß des Latin Squares die Tests in mehrere Reihenfolgen durchlaufen. Der erste Test benötigt gemäß der Zustandsanzahl der unabhängigen Variable {\ttfamily Annäherungserkennung} zwei Reihenfolgen. Der zweite Test muss für ein entsprechendes Counterbalancing aufgrund des zusätzlichen Zustands \emph{eingeschaltet mit Selektionshilfe} mit drei verschiedenen Reihenfolgen getestet werden.
 
 \chapter{Ergebnisse}
 
@@ -544,9 +484,10 @@ Besonders bedanken möchte ich mich bei\dots
 \end{itemize}
 
 %ENDE-----------------------------------------------------------------------------------
-\clearpage
-\bibliographystyle{unsrt}
+
+\bibliographystyle{mlu_ifg}
 \bibliography{books}
+\listoffigures
 \chapter*{Erklärung}
 Ich versichere hiermit, dass ich die vorliegende Bachelorarbeit selbständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe. Die Arbeit wurde keiner anderen Prüfungsbehörde vorgelegt und auch nicht veröffentlicht.
 \begin{center}
