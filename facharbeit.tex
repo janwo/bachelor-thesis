@@ -6,7 +6,7 @@
 \usepackage{tocstyle}
 \usetocstyle{allwithdot}
 \usepackage{lmodern}
-\usepackage{natbib}
+\usepackage[numbers, sort&compress]{natbib}
 \usepackage{graphicx} 
 \usepackage{subfigure} 
 \usepackage{filecontents}
@@ -48,6 +48,7 @@
   author = "Dandekar, K., Raju, B.I. and Srinivasan, M.A.",
   title = "3-D finite-element models of human and monkey fingertips to investigate the mechanics of tactile sense",
   pages = "682-691",
+  year = "2003",
   journal = "Journal of biomechanical Engineering",
   volume = "125"
 }
@@ -208,7 +209,7 @@
 %Abstand der Fussnoten
 \deffootnote{1em}{1em}{\textsuperscript{\thefootnotemark\ }}
 %Regeln, bis zu welcher Tiefe (section,subsection,subsubsection) Überschriften angezeigt werden sollen (Anzeige der berschriften im Verzeichnis / Anzeige der Nummerierung)
-\setcounter{tocdepth}{3}
+\setcounter{tocdepth}{2}
 \setcounter{secnumdepth}{3}
 %-------------------
 %Ende des Kopfbereiches
@@ -250,11 +251,11 @@ Zusammenfassung der GESAMTEN Arbeit. NICHT INS INHALTSVERZEICHNIS
 
 \chapter{Einleitung}
 Im Alltag wird die Entwicklung des "`Ubiquitous computing"' für viele Anwender zunehmend sichtbar. Viele periphere Geräte, wie z.B. in Bereichen der Haussteuerung, Überwachungstechnik und dem Unterhaltungsbereich beinhalten mittlerweile Computerchips, die sich über Smartphones vieler unterschiedlicher Hersteller konfigurieren und steuern lassen. Das Smartphone ist somit als Steuerungszentrale im "`Internet der Dinge"' ein wichtiger Bestandteil geworden.\\
-Somit ist es nicht verwunderlich, dass stetig neue Geräte dieser Art für unterschiedlichste Zielgruppen auf den Markt gebracht werden. Mittlerweile bieten sogar etablierte Hersteller bekannter Seniorenhandys Varianten in Form von Smartphones an \cite{dorol}. Mit Einsteigergeräten, wie z.B. dem "`Google One"' \cite{gOne}, werden auch Menschen mit geringem Einkommen angesprochen. Durch diese stetige Verbreitung nimmt gleichzeitig die Wichtigkeit einer adäquaten Interaktion auf mobilen Endgeräten zu.
+Somit ist es nicht verwunderlich, dass stetig neue Geräte dieser Art für unterschiedlichste Zielgruppen auf den Markt gebracht werden. Mittlerweile bieten sogar etablierte Hersteller bekannter Seniorenhandys Varianten in Form von Smartphones an \citep{dorol}. Mit Einsteigergeräten, wie z.B. dem "`Google One"' \citep{gOne}, werden auch Menschen mit geringem Einkommen angesprochen. Durch diese stetige Verbreitung nimmt gleichzeitig die Wichtigkeit einer adäquaten Interaktion auf mobilen Endgeräten zu.
 
 Aufgrund der Tatsache, dass Anwender von den bisher weit verbreiteten Desktop-PCs und Laptops an große Bedienoberflächen mit umfangreichen Funktionen gewöhnt sind, besteht die Herausforderung auf mobilen Endgeräten auch darin, Anwendungen auf kleineren Bildschirmen ähnlich funktional auszustatten. Dies erfordert eine effiziente Ausnutzung der verfügbaren Bildschirmfläche.\\
-Im Bezug auf die Eingabe zählt bei Desktop-PCs und Laptops die Maus und Tastatur zu den etablierten Eingabegeräten.  Mobile Endgeräte sind jedoch nur dann besonders sinnvoll, wenn keine zusätzlichen Eingabegeräte nötig sind. Damit das Mitführen eines zusätzlichen Eingabegerätes entfällt, erfolgt die Interaktion auf vielen mobilen Endgeräten hauptsächlich über die Fingerberührung unter Mitnutzung zusätzlicher Sensoren, wie z.B. Neigungs- und Lichtsensoren. Zudem stellt sich der Finger als intuitives Eingabegerät heraus und erleichtert damit das Anwählen von Schaltflächen auf dem Bildschirm. Ab einer bestimmten Schaltflächengröße erhöht sich jedoch die Fehlerrate der Interaktion \cite{mousetouchmk}.\\
-Grund hierfür ist der fehlende Mauszeiger als indirektes Eingabegerät. Während die Position des Mauszeigers die Position der Interaktion definiert, weicht die Position des Fingers von der Position der Interaktion meist leicht ab, da der Finger eine größere Berührungsfläche besitzt. Zusätzlich verdeckt der Finger durch dessen Größe kleine Schaltflächen, wohingegen der Mauszeiger weiterhin eine präzise Selektion ermöglicht. Um diesem sogenannten "`Fat-Finger-Problem"' \cite{monkeys} entgegenzuwirken, ist die Mindestgröße der Bedienelemente auf diesen Bildschirmen im Vergleich zu Bedienelementen für Mausinteraktionen auf vielen Systemen vergrößert worden \cite{jin}.\\
+Im Bezug auf die Eingabe zählt bei Desktop-PCs und Laptops die Maus und Tastatur zu den etablierten Eingabegeräten.  Mobile Endgeräte sind jedoch nur dann besonders sinnvoll, wenn keine zusätzlichen Eingabegeräte nötig sind. Damit das Mitführen eines zusätzlichen Eingabegerätes entfällt, erfolgt die Interaktion auf vielen mobilen Endgeräten hauptsächlich über die Fingerberührung unter Mitnutzung zusätzlicher Sensoren, wie z.B. Neigungs- und Lichtsensoren. Zudem stellt sich der Finger als intuitives Eingabegerät heraus und erleichtert damit das Anwählen von Schaltflächen auf dem Bildschirm. Ab einer bestimmten Schaltflächengröße erhöht sich jedoch die Fehlerrate der Interaktion \citep{mousetouchmk}.\\
+Grund hierfür ist der fehlende Mauszeiger als indirektes Eingabegerät. Während die Position des Mauszeigers die Position der Interaktion definiert, weicht die Position des Fingers von der Position der Interaktion meist leicht ab, da der Finger eine größere Berührungsfläche besitzt. Zusätzlich verdeckt der Finger durch dessen Größe kleine Schaltflächen, wohingegen der Mauszeiger weiterhin eine präzise Selektion ermöglicht. Um diesem sogenannten "`Fat-Finger-Problem"' \citep{monkeys} entgegenzuwirken, ist die Mindestgröße der Bedienelemente auf diesen Bildschirmen im Vergleich zu Bedienelementen für Mausinteraktionen auf vielen Systemen vergrößert worden \citep{jin}.\\
 Ein weiterer Vorteil der Mausinteraktion gegenüber der Interaktion durch Berührung ist der Umstand, dass die aktuelle Position des Mauszeigers auch vor dem Klicken auf der Bedienoberfläche sichtbar ist. Die Positionierung und der Klick mittels des Mauszeigers kann somit unabhängig voneinander erfolgen. Dies ermöglicht das Schweben des Mauszeigers über einer Schaltfläche und wird als "`Hovering"' (engl. "`Schweben"') bezeichnet. Auf Laptops und Desktop-PCs ist dies eine gängige Interaktionsform und wird meist verwendet, um die Eigenschaften von Objekten auf dem Bildschirm, wie z.B. das Aussehen, zu verändern. Durch derartige Eigenschaftsänderungen kann der Anwender das Objekt beispielsweise als Schaltfläche identifizieren.
 \begin{figure}
 \centering
@@ -266,7 +267,7 @@ Ein weiterer Vorteil der Mausinteraktion gegenüber der Interaktion durch Berüh
 \end{figure}
 Abbildung \ref{hoveringdesktop} zeigt zwei Anwendungsbeispiele, die diese Interaktionsform nutzen.
 
-Bisher war es jedoch nicht möglich, dass sogenannte "`Hovering"' in das Repertoire der Interaktionsformen mobiler Endgeräte zu übernehmen. Dies änderte sich nachdem Sony im Mai 2012 erstmals ein Smartphone mit integrierter Annäherungserkennung für den gesamten Markt veröffentlichte. In einigen nativen Anwendungen von Sony ließ sich nun auch diese Interaktionsform auf einem berührungsempfindlichen Bildschirm verwenden \cite{sonyverge}. Die Verbreitung und Integration der Annäherungserkennung ist bisher jedoch lediglich in einem kleinen Teil der Geräte erfolgt.
+Bisher war es jedoch nicht möglich, dass sogenannte "`Hovering"' in das Repertoire der Interaktionsformen mobiler Endgeräte zu übernehmen. Dies änderte sich nachdem Sony im Mai 2012 erstmals ein Smartphone mit integrierter Annäherungserkennung für den gesamten Markt veröffentlichte. In einigen nativen Anwendungen von Sony ließ sich nun auch diese Interaktionsform auf einem berührungsempfindlichen Bildschirm verwenden \citep{sonyverge}. Die Verbreitung und Integration der Annäherungserkennung ist bisher jedoch lediglich in einem kleinen Teil der Geräte erfolgt.
 
 In der vorliegenden Bachelorarbeit soll untersucht werden, ob visuelle Hover-""Effekte auf berührungsempfindlichen Endgeräten mit integrierter Annährungserkennung die Usability von Bedienelementen im Bezug auf Geschwindigkeit und Präzision verbessern können und auf diese Weise eine beschleunigte Integration dieser Technologie gerechtfertigt werden kann. Um die visuelle Darstellung der Bedienoberfläche nicht essentiell zu verändern oder zu überlagern, werden die Untersuchungen insofern konkretisiert, sodass auf zusätzliche, visuelle Ebenen verzichtet wird.
 
@@ -274,7 +275,7 @@ In der vorliegenden Bachelorarbeit soll untersucht werden, ob visuelle Hover-""E
 Zum jetzigen Zeitpunkt ist die Anzahl der mobilen Geräte mit integrierter Annäherungserkennung stark begrenzt. Zudem nutzen die Benutzungsoberflächen auf heutigen Smartphones mit Annäherungserkennung die Möglichkeiten der Technologie nur in vereinzelten Fällen aus. Im Folgenden soll ein kurzer Überblick auf die gegenwärtige Hardware und Software gegeben werden, die diese Annäherungserkennung unterstützt.
 
 \subsection{Hardware}
-Bereits im Jahr 1998 erwähnte der Touchpad-Hersteller Synaptics in einem Dokument die allgemeine Funktionsweise und diverse Spezifikationen zur Annäherungserkennung auf berührungsempfindliche Oberflächen und bestätigte damit die technische Möglichkeit \cite{synaptics}. Die Erkennung funktioniert theoretisch auf allen kapazitiven Oberflächen. Dazu wird die Kapazitätsstärke des jeweiligen Fingers ermittelt und anschließend die ungefähre Entfernung des Fingers zur Oberfläche approximiert.
+Bereits im Jahr 1998 erwähnte der Touchpad-Hersteller Synaptics in einem Dokument die allgemeine Funktionsweise und diverse Spezifikationen zur Annäherungserkennung auf berührungsempfindliche Oberflächen und bestätigte damit die technische Möglichkeit \citep{synaptics}. Die Erkennung funktioniert theoretisch auf allen kapazitiven Oberflächen. Dazu wird die Kapazitätsstärke des jeweiligen Fingers ermittelt und anschließend die ungefähre Entfernung des Fingers zur Oberfläche approximiert.
 
 Die Technologie erlangte jedoch erst im Jahr 2012 die Aufmerksamkeit der Öffentlichkeit. Sony vermarktete zu dieser Zeit mit dem Xperia™ sola das erste Smartphone mit Annäherungserkennung und bewarb die Technologie unter dem Namen Floating Touch™.\\
 Zu Beginn des Jahres 2013 brachte als zweiter Hersteller auch Samsung mit dem Galaxy S4 ein Gerät mit ähnlicher Technologie namens AirView™ auf den Markt. Im Gegensatz zu Sony, integrierte Samsung im Jahr 2014 die Annäherungserkennung auch in das Nachfolgemodell, dem Samsung Galaxy S5.
@@ -311,9 +312,9 @@ Auch Studien zeigen, dass diese Leitfäden durchaus nötig sind. So arbeiten Nut
 \setlength{\tabcolsep}{15pt}
 \begin{tabular}{ l c c }
 Plattform & Minimale Größe & Empfohlene Größe\\\hline
-Android \cite{androidrichtlinien} & 7mm & 9mm\\
-Apple \cite{applerichtlinien} & 7mm & 7mm\\
-Windows \cite{winrichtlinien} & 7mm & 9mm\\
+Android \citep{androidrichtlinien} & 7mm & 9mm\\
+Apple \citep{applerichtlinien} & 7mm & 7mm\\
+Windows \citep{winrichtlinien} & 7mm & 9mm\\
 \end{tabular}
 \caption{Mindestgrößen von Bedienelementen.}
 \label{leitfadenalle}
@@ -324,8 +325,9 @@ Aus diesen Gründen sollen die genannten Untersuchungen in dieser Bachelorarbeit
 Durch die Annäherungserkennung werden Interaktionen auf einer weiteren Ebene ermöglicht und erweitern das Repertoire für den Designer einer Anwendung. Sony und Samsung haben mittlerweile Anwendungszenarios für die Annäherungserkennung demonstriert und damit gleichzeitig interessante Lösungen vorgestellt. Dieser Abschnitt soll diese Palette an Möglichkeiten erweitern und gleichzeitig den Bezug zu den behandelten Tests herstellen.
 
 \subsection{Schaltflächenerkennung}
-Das Aussehen einer Schaltfläche variiert zwischen den unterschiedlichen Handymodellen, Betriebssystemen (z.B. iOS, Android) und Gerätetypen. Beispielsweise besitzen Schaltflächen auf einem mobilen Endgerät unter iOS andere Erscheinungsmerkmale als mobile Endgeräte unter Android. Dieser Umstand wird durch die Etablierung des Natural User Interfaces \cite{nui} verstärkt, da es die Abgrenzungen zu klassischen Schaltflächen aufweicht. Anstatt von Schaltflächen werden durch Wischgesten innerhalb bestimmter Bildschirmbereiche neue Aktionen ausgeführt. So werden mittlerweile für digitale Karten die klassischen Schaltflächen verstärkt durch Zoom- und Wischgesten ersetzt und ähneln damit der analogen Nutzung von Papierkarten.\\
+Das Aussehen einer Schaltfläche variiert zwischen den unterschiedlichen Handymodellen, Betriebssystemen (z.B. iOS, Android) und Gerätetypen. Beispielsweise besitzen Schaltflächen auf einem mobilen Endgerät unter iOS andere Erscheinungsmerkmale als mobile Endgeräte unter Android. Dieser Umstand wird durch die Etablierung des Natural User Interfaces \citep{nui} verstärkt, da es die Abgrenzungen zu klassischen Schaltflächen aufweicht. Anstatt von Schaltflächen werden durch Wischgesten innerhalb bestimmter Bildschirmbereiche neue Aktionen ausgeführt. So werden mittlerweile für digitale Karten die klassischen Schaltflächen verstärkt durch Zoom- und Wischgesten ersetzt und ähneln damit der analogen Nutzung von Papierkarten.\\
 Die Folge daraus könnten Schaltflächen sein, die für einzelne Nutzer nicht mehr als solche zu erkennen sind. Während auf Geräten mit Mausinteraktion die Listeneinträge bei Überlagerungen mit dem Mauszeiger hervorgehoben werden und damit als Schaltfläche erkennbar werden, fehlen diese Indikatoren bisher bei Bedienoberflächen für Geräte mit berührungsempfindlichen Bildschirmen. Die Annäherungserkennung könnte diese Lücke füllen und die aktuelle Fingerposition, ähnlich der Mauszeigerposition, in das Erscheinungsbild der Bedienoberfläche einbeziehen.
+%Zudem müssen einige Nutzer dadurch nicht mehr mit der Befürchtung damit bereits eine Funktion auszulösen, den Bildschirm berühren, um anhand des darauffolgenden visuellem Feedback zu beurteilen, ob es sich an der Touchposition um eine Schaltfläche handelt.
 
 \subsection{Tabellenhervorhebungen}
 Durch die Annäherungserkennung bietet sich ein interessanter Lösungsansatz für eine mögliche Vereinfachung der visuellen Orientierung in vielspaltigen Tabellen an. Beim Suchen von einzelnen Einträgen in großen Tabellen ist bei manchen Nutzern zu beobachten, dass einzelne Zeilen mit dem Finger überfahren werden. Vielleicht könnte dieses Verhalten ausgenutzt werden, um den Nutzer in dieser Situation durch das Hervorheben ganzer Tabellenzeilen zu unterstützen. Im Rahmen dieser Bachelorarbeit wird eine derartige Tabellenhervorhebungen implementiert und getestet.
@@ -402,7 +404,7 @@ Die Bedienoberfläche zeigt einen Anweisungstext an, die den Nutzer auf das Halt
 Ist die Berührung misslungen, so wird die Kolorierung solange zurückgesetzt, bis der Nutzer die grüne Schaltfläche erneut und für eine zusätzliche Sekunde gehalten hat. Der Nutzer hat anschließend vier weitere Versuche, um die blaue Schaltfläche zu treffen, andernfalls wird der Test vorläufig beendet.
 Neben den bereits erwähnten Benachrichtigungen, wird bei einer erfolgreichen Berührung dem Nutzer die Erhöhung des Schwierigkeitsgrades signalisiert. Gleichzeitig wird die grüne Schaltfläche wieder am unteren Bildschirmrand eingeblendet und der Nutzer kann den Test im nächsten Schwierigkeitsgrad fortsetzen. Der Test wird beendet, sobald alle Schwierigkeitsgrade von Nutzer bewältigt worden sind.
 
-Die Testanwendung ist so konzipiert, dass beliebig viele Schwierigkeitsgrade und Schaltflächengrößen getestet werden können. Die Größe der Schaltfläche kann für jeden Schwierigkeitsgrad individuell angepasst werden. Die Testanwendung ist so gestaltet, dass neben dem obligatorischen Zeitpunkt der Interaktion sowohl die Position der grünen und blauen Schaltflächen auf dem Bildschirm, als auch die genauen Berührungspunkte auf diesen Schaltflächen selbst protokolliert werden. Im Falle einer eventuelle Formelanwendung nach Fitts \cite{fitts} sind somit alle Parameter für jeden Versuch und Schwierigkeitsgrad vorhanden oder kalkulierbar.
+Die Testanwendung ist so konzipiert, dass beliebig viele Schwierigkeitsgrade und Schaltflächengrößen getestet werden können. Die Größe der Schaltfläche kann für jeden Schwierigkeitsgrad individuell angepasst werden. Die Testanwendung ist so gestaltet, dass neben dem obligatorischen Zeitpunkt der Interaktion sowohl die Position der grünen und blauen Schaltflächen auf dem Bildschirm, als auch die genauen Berührungspunkte auf diesen Schaltflächen selbst protokolliert werden. Im Falle einer eventuelle Formelanwendung nach Fitts \citep{fitts} sind somit alle Parameter für jeden Versuch und Schwierigkeitsgrad vorhanden oder kalkulierbar.
 
 Um auch in diesem Test die Auswirkungen der Annäherungserkennung zu untersuchen, wird dieser Test ebenfalls wiederholt. Dieser Test benötigt aufgrund der drei Testvarianten zwei Wiederholungen. Während einer Wiederholung werden die Hervorhebungen zu- oder abgeschaltet, in der anderen die softwareseitige Selektionshilfe.
 
@@ -468,7 +470,7 @@ Wurde auch für die zweite Testvariante der System Usability Scale ausgefüllt, 
 Wurden alle Tests der Testanwendung vollständig absolviert, befragt der Testleiter die Testperson abschließend gemäß des qualitativen Fragebogens und notiert die gegebenen Antworten für die Testperson auf dem Fragebogen, um eine möglichst ausführliche Rückmeldung zu erhalten. 
 
 \section{Design}
-Die gesamte Testsitzung ist aufgeteilt in zwei Tests und ein 1x2 bzw. 2x26, within-subjects Design.
+Die gesamte Testsitzung ist aufgeteilt in zwei Tests. Der erste Test besitzt einen Faktor mit zwei Levels und der zweite Test ist ein 3x26 Design. Beide Test sind within-subjects.
 
 Der erste Test berücksichtigt die unabhängige Variable {\tt Annäherungserkennung} mit den nominalen Zuständen {\tt ausgeschaltet} und {\tt eingeschaltet}. Der erste Test besitzt somit zwei Settings. Die abhängige Variable {\tt Zeit} beschreibt die Zeitspanne (in ms) zwischen der Listeneinblendung bis zur richtigen Selektion der gesuchten Person. Bei Fehlselektionen wird die Variable nicht zurückgesetzt.
 
@@ -543,7 +545,7 @@ Besonders bedanken möchte ich mich bei\dots
 
 %ENDE-----------------------------------------------------------------------------------
 \clearpage
-\bibliographystyle{plain}
+\bibliographystyle{unsrt}
 \bibliography{books}
 \chapter*{Erklärung}
 Ich versichere hiermit, dass ich die vorliegende Bachelorarbeit selbständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe. Die Arbeit wurde keiner anderen Prüfungsbehörde vorgelegt und auch nicht veröffentlicht.
